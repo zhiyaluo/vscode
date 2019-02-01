@@ -15,10 +15,6 @@
 	align-items: center;
 }
 
-.monaco-tree .outline-element .outline-element-icon {
-	padding-right: 3px;
-}
-
 .monaco-tree .outline-element .outline-element-label {
 	text-overflow: ellipsis;
 	overflow: hidden;

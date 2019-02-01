@@ -6,9 +6,10 @@
 .monaco-workbench .symbol-icon {
 	display: inline-block;
 	height: 14px;
-	width: 16px;
+	width: 14px;
 	min-height: 14px;
-	min-width: 16px;
+	min-width: 14px;
+	margin-right: 4px;
 }
 
 /* default icons */
