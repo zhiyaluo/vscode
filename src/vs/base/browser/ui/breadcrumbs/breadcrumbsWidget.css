@@ -23,6 +23,11 @@
 	outline: none;
 }
 
+.monaco-breadcrumbs .monaco-breadcrumb-item .monaco-icon-label::before {
+	padding-right: 4px;
+	line-height: 22px;
+}
+
 .monaco-breadcrumbs .monaco-breadcrumb-item::before {
 	width: 14px;
 	height: 14px;
