@@ -42,8 +42,24 @@
 	background-image: url('arrow-collapse-dark.svg');
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-panel-view .panel > .panel-header {
+	background-image: url('arrow-collapse-dark-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header {
+	background-image: url('arrow-collapse-dark-alt2.svg');
+}
+
 .vs-dark .monaco-panel-view .panel > .panel-header.expanded {
 	background-image: url('arrow-expand-dark.svg');
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-panel-view .panel > .panel-header.expanded {
+	background-image: url('arrow-expand-dark-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header.expanded {
+	background-image: url('arrow-expand-dark-alt2.svg');
 }
 
 /* TODO: actions should be part of the panel, but they aren't yet */

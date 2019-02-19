@@ -7,6 +7,14 @@
 	-webkit-mask: url('icon-dark.svg') no-repeat 50% 50%;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .activitybar > .content .monaco-action-bar .action-label.scm {
+	-webkit-mask-image: url('icon-dark-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar > .content .monaco-action-bar .action-label.scm {
+	-webkit-mask-image: url('icon-dark-alt2.svg');
+}
+
 .monaco-workbench .viewlet.scm-viewlet .collapsible.header .actions {
 	width: initial;
 	flex: 1;

@@ -9,5 +9,15 @@
 
 .vs-dark .monaco-workbench .flip-editor-layout,
 .hc-black .monaco-workbench .flip-editor-layout {
-	background-image: url('editor-layout-inverse.svg') !important;
+	background-image: url('editor-layout-inverse.svg');
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .flip-editor-layout,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .flip-editor-layout {
+	background-image: url('editor-layout-inverse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .flip-editor-layout,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .flip-editor-layout {
+	background-image: url('editor-layout-inverse-alt2.svg');
 }

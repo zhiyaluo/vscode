@@ -1,0 +1,28 @@
+{
+	"name": "vscode-icon-explorations",
+	"private": true,
+	"version": "1.0.0",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "icon-explorations-original",
+				"label": "Icon Explorations (Original)",
+				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
+			},
+			{
+				"id": "icon-explorations-1",
+				"label": "Icon Explorations 1",
+				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
+			},
+			{
+				"id": "icon-explorations-2",
+				"label": "Icon Explorations 2",
+				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
+			}
+		]
+	}
+}

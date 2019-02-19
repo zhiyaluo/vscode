@@ -65,6 +65,16 @@
 	background: url('close-inverse.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+	background: url('close-inverse-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+	background: url('close-inverse-alt2.svg') center center no-repeat;
+}
+
 /* Drag and Drop Feedback */
 
 .monaco-editor-group-drag-image {

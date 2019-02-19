@@ -8,6 +8,14 @@
 	-webkit-mask: url('files-dark.svg') no-repeat 50% 50%;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .activitybar .monaco-action-bar .action-label.explore {
+	-webkit-mask: url('files-dark-alt1.svg') no-repeat 50% 50%;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar .monaco-action-bar .action-label.explore {
+	-webkit-mask: url('files-dark-alt2.svg') no-repeat 50% 50%;
+}
+
 /* --- Explorer viewlet --- */
 .explorer-viewlet,
 .explorer-folders-view {

@@ -16,3 +16,13 @@
 .vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
 	background-image: url('ellipsis-inverse.svg');
 }
+
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-toolbar .action-label.toolbar-toggle-more,
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
+	background-image: url('ellipsis-inverse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-toolbar .action-label.toolbar-toggle-more,
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
+	background-image: url('ellipsis-inverse-alt2.svg');
+}
