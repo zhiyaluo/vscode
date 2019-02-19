@@ -303,7 +303,7 @@ class MarkerWidget extends Disposable {
 		const viewModel = this.markersViewModel.getViewModel(marker);
 		const multiline = viewModel && viewModel.multiline;
 		const action = new Action('problems.action.toggleMultiline');
-		action.enabled = viewModel && marker.lines.length > 1;
+		action.enabled = !!viewModel && marker.lines.length > 1;
 		action.tooltip = multiline ? localize('single line', "Show message in single line") : localize('multi line', "Show message in multiple lines");
 		action.class = multiline ? 'octicon octicon-chevron-up' : 'octicon octicon-chevron-down';
 		action.run = () => { if (viewModel) { viewModel.multiline = !viewModel.multiline; } return Promise.resolve(); };
@@ -406,7 +406,7 @@ export class RelatedInformationRenderer implements ITreeRenderer<RelatedInformat
 
 export class Filter implements ITreeFilter<TreeElement, FilterData> {
 
-	options = new FilterOptions();
+	constructor(public options: FilterOptions) { }
 
 	filter(element: TreeElement, parentVisibility: TreeVisibility): TreeFilterResult<FilterData> {
 		if (element instanceof ResourceMarkers) {
@@ -423,7 +423,7 @@ export class Filter implements ITreeFilter<TreeElement, FilterData> {
 			return false;
 		}
 
-		if (this.options.excludePattern && !!this.options.excludePattern(resourceMarkers.resource.fsPath)) {
+		if (this.options.excludesMatcher.matches(resourceMarkers.resource)) {
 			return false;
 		}
 
@@ -433,7 +433,7 @@ export class Filter implements ITreeFilter<TreeElement, FilterData> {
 			return { visibility: true, data: { type: FilterDataType.ResourceMarkers, uriMatches } };
 		}
 
-		if (this.options.includePattern && this.options.includePattern(resourceMarkers.resource.fsPath)) {
+		if (this.options.includesMatcher.matches(resourceMarkers.resource)) {
 			return true;
 		}
 

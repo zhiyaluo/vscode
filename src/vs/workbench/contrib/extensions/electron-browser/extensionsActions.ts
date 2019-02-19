@@ -8,13 +8,12 @@ import { localize } from 'vs/nls';
 import { IAction, Action } from 'vs/base/common/actions';
 import { Throttler, Delayer } from 'vs/base/common/async';
 import * as DOM from 'vs/base/browser/dom';
-import * as extpath from 'vs/base/common/extpath';
 import { Event } from 'vs/base/common/event';
 import * as json from 'vs/base/common/json';
 import { ActionItem, Separator, IActionItemOptions } from 'vs/base/browser/ui/actionbar/actionbar';
 import { IContextMenuService } from 'vs/platform/contextview/browser/contextView';
 import { IDisposable, dispose, Disposable } from 'vs/base/common/lifecycle';
-import { IExtension, ExtensionState, IExtensionsWorkbenchService, VIEWLET_ID, IExtensionsViewlet, AutoUpdateConfigurationKey, IExtensionContainer } from 'vs/workbench/contrib/extensions/common/extensions';
+import { IExtension, ExtensionState, IExtensionsWorkbenchService, VIEWLET_ID, IExtensionsViewlet, AutoUpdateConfigurationKey, IExtensionContainer, EXTENSIONS_CONFIG } from 'vs/workbench/contrib/extensions/common/extensions';
 import { ExtensionsConfigurationInitialContent } from 'vs/workbench/contrib/extensions/common/extensionsFileTemplate';
 import { IExtensionEnablementService, IExtensionTipsService, EnablementState, ExtensionsLabel, IExtensionRecommendation, IGalleryExtension, IExtensionsConfigContent, IExtensionGalleryService, INSTALL_ERROR_MALICIOUS, INSTALL_ERROR_INCOMPATIBLE, IGalleryExtensionVersion, ILocalExtension } from 'vs/platform/extensionManagement/common/extensionManagement';
 import { areSameExtensions } from 'vs/platform/extensionManagement/common/extensionManagementUtil';
@@ -360,7 +359,7 @@ export class CombinedInstallAction extends ExtensionAction {
 			return this.uninstallAction.run();
 		}
 
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 
 	dispose(): void {
@@ -492,7 +491,7 @@ export abstract class ExtensionDropDownAction extends ExtensionAction {
 		if (this._actionItem) {
 			this._actionItem.showMenu(actionGroups, disposeActionsOnHide);
 		}
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 
 	dispose(): void {
@@ -690,7 +689,7 @@ export class ExtensionInfoAction extends ExtensionAction {
 		const clipboardStr = `${name}\n${id}\n${description}\n${verision}\n${publisher}${link ? '\n' + link : ''}`;
 
 		clipboard.writeText(clipboardStr);
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 }
 
@@ -835,7 +834,7 @@ export abstract class ExtensionEditorDropDownAction extends ExtensionDropDownAct
 		} else {
 			return super.run({ actionGroups: [this.actions], disposeActionsOnHide: false });
 		}
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 }
 
@@ -1594,7 +1593,7 @@ export class IgnoreExtensionRecommendationAction extends Action {
 
 	public run(): Promise<any> {
 		this.extensionsTipsService.toggleIgnoredRecommendation(this.extension.identifier.id, true);
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 
 	dispose(): void {
@@ -1624,7 +1623,7 @@ export class UndoIgnoreExtensionRecommendationAction extends Action {
 
 	public run(): Promise<any> {
 		this.extensionsTipsService.toggleIgnoredRecommendation(this.extension.identifier.id, false);
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 
 	dispose(): void {
@@ -2044,7 +2043,7 @@ export class ConfigureWorkspaceRecommendedExtensionsAction extends AbstractConfi
 	public run(): Promise<void> {
 		switch (this.contextService.getWorkbenchState()) {
 			case WorkbenchState.FOLDER:
-				return this.openExtensionsFile(this.contextService.getWorkspace().folders[0].toResource(extpath.join('.vscode', 'extensions.json')));
+				return this.openExtensionsFile(this.contextService.getWorkspace().folders[0].toResource(EXTENSIONS_CONFIG));
 			case WorkbenchState.WORKSPACE:
 				return this.openWorkspaceConfigurationFile(this.contextService.getWorkspace().configuration!);
 		}
@@ -2089,7 +2088,7 @@ export class ConfigureWorkspaceFolderRecommendedExtensionsAction extends Abstrac
 		return Promise.resolve(pickFolderPromise)
 			.then(workspaceFolder => {
 				if (workspaceFolder) {
-					return this.openExtensionsFile(workspaceFolder.toResource(extpath.join('.vscode', 'extensions.json')));
+					return this.openExtensionsFile(workspaceFolder.toResource(EXTENSIONS_CONFIG));
 				}
 				return null;
 			});
@@ -2142,7 +2141,7 @@ export class AddToWorkspaceFolderRecommendationsAction extends AbstractConfigure
 				if (!workspaceFolder) {
 					return Promise.resolve();
 				}
-				const configurationFile = workspaceFolder.toResource(extpath.join('.vscode', 'extensions.json'));
+				const configurationFile = workspaceFolder.toResource(EXTENSIONS_CONFIG);
 				return this.getWorkspaceFolderExtensionsConfigContent(configurationFile).then(content => {
 					const extensionIdLowerCase = extensionId.id.toLowerCase();
 					if (shouldRecommend) {
@@ -2348,7 +2347,7 @@ export class StatusLabelAction extends Action implements IExtensionContainer {
 	}
 
 	run(): Promise<any> {
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 
 }
@@ -2373,7 +2372,7 @@ export class MaliciousStatusLabelAction extends ExtensionAction {
 	}
 
 	run(): Promise<any> {
-		return Promise.resolve(null);
+		return Promise.resolve();
 	}
 }
 
@@ -2520,14 +2519,14 @@ export class OpenExtensionsFolderAction extends Action {
 	}
 
 	run(): Promise<void> {
-		const extensionsHome = this.environmentService.extensionsPath;
+		const extensionsHome = URI.file(this.environmentService.extensionsPath);
 
-		return Promise.resolve(this.fileService.resolveFile(URI.file(extensionsHome))).then(file => {
+		return Promise.resolve(this.fileService.resolveFile(extensionsHome)).then(file => {
 			let itemToShow: string;
 			if (file.children && file.children.length > 0) {
 				itemToShow = file.children[0].resource.fsPath;
 			} else {
-				itemToShow = extpath.normalize(extensionsHome, true);
+				itemToShow = extensionsHome.fsPath;
 			}
 
 			return this.windowsService.showItemInFolder(itemToShow);
@@ -2560,7 +2559,7 @@ export class InstallVSIXAction extends Action {
 			buttonLabel: mnemonicButtonLabel(localize({ key: 'installButton', comment: ['&& denotes a mnemonic'] }, "&&Install"))
 		})).then(result => {
 			if (!result) {
-				return Promise.resolve(null);
+				return Promise.resolve();
 			}
 
 			return Promise.all(result.map(vsix => this.extensionsWorkbenchService.install(vsix)))
