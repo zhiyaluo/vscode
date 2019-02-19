@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Splitview</title>
+	<style>
+		#container {
+			width: 800px;
+			height: 400px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container"></div>
+
+	<script src="/static/vs/loader.js"></script>
+	<script>
+		function perf(name, fn) {
+			performance.mark('before ' + name);
+			const start = performance.now();
+			fn();
+			console.log(name + ' took', performance.now() - start);
+			performance.mark('after ' + name);
+		}
+
+		require.config({ baseUrl: '/static' });
+
+
+		require(['vs/base/browser/ui/splitview/splitview', 'vs/base/common/event'], ({ SplitView, Orientation, Sizing }, { Event }) => {
+			function createView(color) {
+				const element = document.createElement('div');
+				element.style.width = '100%';
+				element.style.height = '100%';
+				element.style.backgroundColor = color;
+
+				return {
+					element,
+					minimumSize: 20,
+					maximumSize: Number.POSITIVE_INFINITY,
+					onDidChange: Event.None,
+					layout(size, orientation) { }
+				};
+			}
+
+			const splitview = new SplitView(container, { orientation: Orientation.HORIZONTAL });
+			splitview.layout(800);
+
+			splitview.addView(createView('red'), Sizing.Distribute);
+			splitview.addView(createView('green'), Sizing.Distribute);
+			splitview.addView(createView('blue'), Sizing.Distribute);
+			splitview.addView(createView('yellow'), Sizing.Distribute);
+		});
+	</script>
+</body>
+
+</html>
