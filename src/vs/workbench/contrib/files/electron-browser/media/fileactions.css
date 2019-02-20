@@ -135,16 +135,6 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background-image: url('split-editor-horizontal-inverse.svg');
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .quick-open-sidebyside-horizontal,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .quick-open-sidebyside-horizontal {
-	background-image: url('split-editor-horizontal-inverse-alt1.svg');
-}
-
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .quick-open-sidebyside-horizontal,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .quick-open-sidebyside-horizontal {
-	background-image: url('split-editor-horizontal-inverse-alt2.svg');
-}
-
 .monaco-workbench .file-editor-action.action-open-preview {
 	background: url('Preview.svg') center center no-repeat;
 }
