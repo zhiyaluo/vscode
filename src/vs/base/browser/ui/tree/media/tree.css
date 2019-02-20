@@ -43,8 +43,24 @@
 	background-image: url("expanded-dark.svg");
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+	background-image: url("expanded-dark-alt1.svg");
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+	background-image: url("expanded-dark-alt2.svg");
+}
+
 .vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
 	background-image: url("collapsed-dark.svg");
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+	background-image: url("collapsed-dark-alt1.svg");
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+	background-image: url("collapsed-dark-alt2.svg");
 }
 
 .hc-black .monaco-tl-twistie.collapsible:not(.loading) {
