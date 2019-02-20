@@ -506,7 +506,7 @@ export class WorkbenchThemeService implements IWorkbenchThemeService {
 	private doSetFileIconTheme(iconThemeData: FileIconThemeData): void {
 		this.currentIconTheme = iconThemeData;
 
-		this.addData(iconThemeData);
+		document.body.dataset.iconTheme = iconThemeData.settingsId!;
 
 		if (this.container) {
 			if (iconThemeData.id) {
@@ -532,10 +532,6 @@ export class WorkbenchThemeService implements IWorkbenchThemeService {
 		}
 		this.onFileIconThemeChange.fire(this.currentIconTheme);
 
-	}
-
-	private addData(iconThemeData: FileIconThemeData) {
-		document.body.dataset.iconTheme = iconThemeData.settingsId;
 	}
 
 	private writeFileIconConfiguration(settingsTarget: ConfigurationTarget | undefined | 'auto'): Promise<IFileIconTheme> {
