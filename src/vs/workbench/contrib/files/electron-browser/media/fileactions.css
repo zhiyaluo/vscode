@@ -26,8 +26,24 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background: url('AddFile.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.new-file {
+	background: url('AddFile-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.new-file {
+	background: url('AddFile-alt2.svg') center center no-repeat;
+}
+
 .monaco-workbench .explorer-action.save-all {
 	background: url('saveall.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.save-all {
+	background: url('saveall-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.save-all {
+	background: url('saveall-alt2.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.save-all,
@@ -64,6 +80,14 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background: url('AddFolder.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.new-folder {
+	background: url('AddFolder-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.new-folder {
+	background: url('AddFolder-alt2.svg') center center no-repeat;
+}
+
 .vs-dark .monaco-workbench .explorer-action.new-folder,
 .hc-black .monaco-workbench .explorer-action.new-folder {
 	background: url('AddFolder_inverse.svg') center center no-repeat;
@@ -83,6 +107,14 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background: url('Refresh.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.refresh-explorer {
+	background: url('Refresh-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.refresh-explorer {
+	background: url('Refresh-alt2.svg') center center no-repeat;
+}
+
 .vs-dark .monaco-workbench .explorer-action.refresh-explorer,
 .hc-black .monaco-workbench .explorer-action.refresh-explorer {
 	background: url('Refresh_inverse.svg') center center no-repeat;
@@ -100,6 +132,14 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 
 .monaco-workbench .explorer-action.collapse-explorer {
 	background: url('CollapseAll.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.collapse-explorer {
+	background: url('CollapseAll-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.collapse-explorer {
+	background: url('CollapseAll-alt2.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.collapse-explorer,

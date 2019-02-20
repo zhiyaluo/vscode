@@ -7,6 +7,14 @@
 	background-image: url('editor-layout.svg');
 }
 
+body[data-icon-theme="icon-explorations-1"].vs .monaco-workbench .flip-editor-layout {
+	background-image: url('editor-layout-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs .monaco-workbench .flip-editor-layout {
+	background-image: url('editor-layout-alt2.svg');
+}
+
 .vs-dark .monaco-workbench .flip-editor-layout,
 .hc-black .monaco-workbench .flip-editor-layout {
 	background-image: url('editor-layout-inverse.svg');
