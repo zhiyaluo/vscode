@@ -32,8 +32,28 @@
 	background-repeat: no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-panel-view .panel > .panel-header {
+	background-image: url('arrow-collapse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header {
+	background-image: url('arrow-collapse-alt2.svg');
+}
+
 .monaco-panel-view .panel > .panel-header.expanded {
 	background-image: url('arrow-expand.svg');
+	background-position: 2px center;
+	background-repeat: no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-panel-view .panel > .panel-header.expanded {
+	background-image: url('arrow-expand-alt1.svg');
+	background-position: 2px center;
+	background-repeat: no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header.expanded {
+	background-image: url('arrow-expand-alt2.svg');
 	background-position: 2px center;
 	background-repeat: no-repeat;
 }

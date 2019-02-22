@@ -34,13 +34,39 @@
 	background-image: url("expanded.svg");
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-tl-twistie.collapsible {
+	background-image: url("expanded-alt1.svg");
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible {
+	background-image: url("expanded-alt2.svg");
+}
+
 .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
 	display: inline-block;
 	background-image: url("collapsed.svg");
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+	display: inline-block;
+	background-image: url("collapsed-alt1.svg");
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+	display: inline-block;
+	background-image: url("collapsed-alt2.svg");
+}
+
 .vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
 	background-image: url("expanded-dark.svg");
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+	background-image: url("expanded-dark-alt1.svg");
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+	background-image: url("expanded-dark-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {

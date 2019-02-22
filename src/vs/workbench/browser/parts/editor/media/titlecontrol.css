@@ -60,6 +60,14 @@
 	background: url('close.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+	background: url('close-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+	background: url('close-alt2.svg') center center no-repeat;
+}
+
 .vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
 .hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
 	background: url('close-inverse.svg') center center no-repeat;

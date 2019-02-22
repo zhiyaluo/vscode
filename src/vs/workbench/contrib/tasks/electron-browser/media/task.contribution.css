@@ -63,11 +63,31 @@
 
 .task-statusbar-item-label > .task-statusbar-item-label-error {
 	-webkit-mask: url("status-error.svg") no-repeat 50% 50%;
+	-webkit-mask-size: 11px;
+}
+
+body[data-icon-theme="icon-explorations-1"] .task-statusbar-item-label > .task-statusbar-item-label-error {
+	-webkit-mask: url("status-error-alt1.svg") no-repeat 50% 50%;
+	-webkit-mask-size: 14px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .task-statusbar-item-label > .task-statusbar-item-label-error {
+	-webkit-mask: url("status-error-alt2.svg") no-repeat 50% 50%;
 	-webkit-mask-size: 14px;
 }
 
 .task-statusbar-item-label > .task-statusbar-item-label-warning {
 	-webkit-mask: url("status-warning.svg") no-repeat 50% 50%;
+	-webkit-mask-size: 11px;
+}
+
+body[data-icon-theme="icon-explorations-1"] .task-statusbar-item-label > .task-statusbar-item-label-warning {
+	-webkit-mask: url("status-warning-alt1.svg") no-repeat 50% 50%;
+	-webkit-mask-size: 14px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .task-statusbar-item-label > .task-statusbar-item-label-warning {
+	-webkit-mask: url("status-warning-alt2.svg") no-repeat 50% 50%;
 	-webkit-mask-size: 14px;
 }
 
