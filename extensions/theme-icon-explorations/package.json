@@ -9,11 +9,6 @@
 	"contributes": {
 		"iconThemes": [
 			{
-				"id": "icon-explorations-original",
-				"label": "Icon Explorations (Original)",
-				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
-			},
-			{
 				"id": "icon-explorations-1",
 				"label": "Icon Explorations 1",
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
@@ -21,6 +16,11 @@
 			{
 				"id": "icon-explorations-2",
 				"label": "Icon Explorations 2",
+				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
+			},
+			{
+				"id": "icon-explorations-original",
+				"label": "Icon Explorations (Original)",
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
 			}
 		]
