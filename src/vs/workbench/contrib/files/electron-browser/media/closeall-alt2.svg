@@ -1,9 +1,6 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1" fill="white">
-<rect x="1" y="2" width="15" height="12" rx="1"/>
-</mask>
-<rect x="1" y="2" width="15" height="12" rx="1" stroke="#424242" stroke-width="4" mask="url(#path-1-inside-1)"/>
-<path d="M2.07143 4.00001L14.4999 4.00001" stroke="#424242" stroke-width="2"/>
+<rect x="2" y="3" width="13" height="10" stroke="#424242" stroke-width="2"/>
 <path d="M6.69164 10.4833L10.5416 6.60416" stroke="#424242" stroke-width="2" stroke-miterlimit="1" stroke-linejoin="bevel"/>
 <path d="M6.69164 6.60416L10.5416 10.4833" stroke="#424242" stroke-width="2" stroke-miterlimit="1" stroke-linejoin="bevel"/>
+<path d="M2 4H14.5" stroke="#424242" stroke-width="2"/>
 </svg>

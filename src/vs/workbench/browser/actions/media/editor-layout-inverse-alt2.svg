@@ -2,11 +2,10 @@
 <mask id="path-1-inside-1" fill="white">
 <rect x="4" y="5" width="12" height="10" rx="1"/>
 </mask>
-<rect x="4" y="5" width="12" height="10" rx="1" fill="#313131" stroke="#C5C5C5" stroke-width="4" mask="url(#path-1-inside-1)"/>
-<mask id="path-2-inside-2" fill="white">
-<rect x="1" y="1" width="7" height="9" rx="1"/>
+<rect x="4" y="5" width="12" height="10" rx="1" stroke="#C5C5C5" stroke-width="4" mask="url(#path-1-inside-1)"/>
+<path d="M5.5 7H14.5M1.5 2.5H4.25H7" stroke="#C5C5C5" stroke-width="2"/>
+<mask id="path-3-inside-2" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V3H6V6H8V2C8 1.44772 7.55228 1 7 1H2C1.44772 1 1 1.44772 1 2V9C1 9.55229 1.44772 10 2 10H5V8H3Z"/>
 </mask>
-<rect x="1" y="1" width="7" height="9" rx="1" fill="#313131" stroke="#C5C5C5" stroke-width="4" mask="url(#path-2-inside-2)"/>
-<rect x="2" y="2" width="5" height="2" fill="#C5C5C5"/>
-<rect x="7" y="6" width="8" height="2" fill="#C5C5C5"/>
+<path d="M3 3V1H1V3H3ZM3 8H1V10H3V8ZM6 3H8V1H6V3ZM6 6H4V8H6V6ZM8 6V8H10V6H8ZM5 10V12H7V10H5ZM5 8H7V6H5V8ZM1 3V8H5V3H1ZM6 1H3V5H6V1ZM8 6V3H4V6H8ZM6 8H8V4H6V8ZM10 6V2H6V6H10ZM10 2C10 0.343146 8.65685 -1 7 -1V3C6.44772 3 6 2.55228 6 2H10ZM7 -1H2V3H7V-1ZM2 -1C0.343146 -1 -1 0.343145 -1 2H3C3 2.55228 2.55228 3 2 3V-1ZM-1 2V9H3V2H-1ZM-1 9C-1 10.6569 0.343146 12 2 12V8C2.55228 8 3 8.44772 3 9H-1ZM2 12H5V8H2V12ZM7 10V8H3V10H7ZM3 10H5V6H3V10Z" fill="#C5C5C5" mask="url(#path-3-inside-2)"/>
 </svg>
