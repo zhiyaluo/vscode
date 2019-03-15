@@ -255,7 +255,7 @@ body[data-icon-theme="icon-explorations-2"] .explorer-viewlet .explorer-open-edi
 }
 
 body[data-icon-theme="icon-explorations-3"] .explorer-viewlet .explorer-open-editors .close-editor-action {
-	background: url("action-close-alt3.svg") center center no-repeat;
+	background: url("action-close-alt2.svg") center center no-repeat;
 }
 
 .explorer-viewlet .explorer-open-editors .focused .monaco-list-row.selected:not(.highlighted) .close-editor-action {
