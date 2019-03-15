@@ -15,6 +15,10 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar > .co
 	-webkit-mask: url('extensions-dark-alt2.svg') no-repeat 50% 50%;
 }
 
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .activitybar > .content .monaco-action-bar .action-label.extensions {
+	-webkit-mask: url('extensions-dark-alt3.svg') no-repeat 50% 50%;
+}
+
 .extensions .split-view-view .panel-header .count-badge-wrapper {
 	position: absolute;
 	right: 12px;

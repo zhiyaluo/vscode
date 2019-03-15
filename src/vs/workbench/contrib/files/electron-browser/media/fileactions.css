@@ -30,6 +30,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background: url("closeall_inverse-alt2.svg") center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-viewlet .action-close-all-files,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-viewlet .action-close-all-files {
+	background: url("closeall_inverse-alt2.svg") center center no-repeat;
+}
+
 .monaco-workbench .explorer-action.new-file {
 	background: url('AddFile.svg') center center no-repeat;
 }
@@ -42,6 +47,10 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.n
 	background: url('AddFile-alt2.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .explorer-action.new-file {
+	background: url('AddFile-alt3.svg') center center no-repeat;
+}
+
 .monaco-workbench .explorer-action.save-all {
 	background: url('saveall.svg') center center no-repeat;
 }
@@ -52,6 +61,10 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.s
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.save-all {
 	background: url('saveall-alt2.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .explorer-action.save-all {
+	background: url('saveall-alt3.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.save-all,
@@ -69,6 +82,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background: url('saveall_inverse-alt2.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-action.save-all,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-action.save-all {
+	background: url('saveall_inverse-alt3.svg') center center no-repeat;
+}
+
 .vs-dark .monaco-workbench .explorer-action.new-file,
 .hc-black .monaco-workbench .explorer-action.new-file {
 	background: url('AddFile_inverse.svg') center center no-repeat;
@@ -84,6 +102,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background-image: url('AddFile_inverse-alt2.svg');
 }
 
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-action.new-file,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-action.new-file {
+	background-image: url('AddFile_inverse-alt3.svg');
+}
+
 .monaco-workbench .explorer-action.new-folder {
 	background: url('AddFolder.svg') center center no-repeat;
 }
@@ -94,6 +117,10 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.n
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.new-folder {
 	background: url('AddFolder-alt2.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .explorer-action.new-folder {
+	background: url('AddFolder-alt3.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.new-folder,
@@ -111,6 +138,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background-image: url('AddFolder_inverse-alt2.svg');
 }
 
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-action.new-folder,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-action.new-folder {
+	background-image: url('AddFolder_inverse-alt3.svg');
+}
+
 .monaco-workbench .explorer-action.refresh-explorer {
 	background: url('Refresh.svg') center center no-repeat;
 }
@@ -121,6 +153,10 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.r
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.refresh-explorer {
 	background: url('Refresh-alt2.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .explorer-action.refresh-explorer {
+	background: url('Refresh-alt3.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.refresh-explorer,
@@ -138,6 +174,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 	background-image: url('Refresh_inverse-alt2.svg');
 }
 
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-action.refresh-explorer,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-action.refresh-explorer {
+	background-image: url('Refresh_inverse-alt3.svg');
+}
+
 .monaco-workbench .explorer-action.collapse-explorer {
 	background: url('CollapseAll.svg') center center no-repeat;
 }
@@ -148,6 +189,10 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.c
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.collapse-explorer {
 	background: url('CollapseAll-alt2.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .explorer-action.collapse-explorer {
+	background: url('CollapseAll-alt3.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .explorer-action.collapse-explorer,
@@ -163,6 +208,11 @@ body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.collapse-explorer,
 body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.collapse-explorer {
 	background-image: url('CollapseAll_inverse-alt2.svg');
+}
+
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-action.collapse-explorer,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-action.collapse-explorer {
+	background-image: url('CollapseAll_inverse-alt3.svg');
 }
 
 .monaco-workbench .quick-open-sidebyside-vertical {
@@ -204,6 +254,10 @@ body[data-icon-theme="icon-explorations-2"] .explorer-viewlet .explorer-open-edi
 	background: url("action-close-alt2.svg") center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-3"] .explorer-viewlet .explorer-open-editors .close-editor-action {
+	background: url("action-close-alt3.svg") center center no-repeat;
+}
+
 .explorer-viewlet .explorer-open-editors .focused .monaco-list-row.selected:not(.highlighted) .close-editor-action {
 	background: url("action-close-focus.svg") center center no-repeat;
 }
@@ -233,5 +287,10 @@ body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer
 
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-viewlet .explorer-open-editors .close-editor-action,
 body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-viewlet .explorer-open-editors .close-editor-action {
+	background: url("action-close-dark-alt2.svg") center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-viewlet .explorer-open-editors .close-editor-action,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-viewlet .explorer-open-editors .close-editor-action {
 	background: url("action-close-dark-alt2.svg") center center no-repeat;
 }

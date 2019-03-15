@@ -36,7 +36,8 @@ body[data-icon-theme="icon-explorations-1"] .monaco-panel-view .panel > .panel-h
 	background-image: url('arrow-collapse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header {
+body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header,
+body[data-icon-theme="icon-explorations-3"] .monaco-panel-view .panel > .panel-header {
 	background-image: url('arrow-collapse-alt2.svg');
 }
 
@@ -52,7 +53,8 @@ body[data-icon-theme="icon-explorations-1"] .monaco-panel-view .panel > .panel-h
 	background-repeat: no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header.expanded {
+body[data-icon-theme="icon-explorations-2"] .monaco-panel-view .panel > .panel-header.expanded,
+body[data-icon-theme="icon-explorations-3"] .monaco-panel-view .panel > .panel-header.expanded {
 	background-image: url('arrow-expand-alt2.svg');
 	background-position: 2px center;
 	background-repeat: no-repeat;
@@ -66,7 +68,8 @@ body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-panel-view .panel > 
 	background-image: url('arrow-collapse-dark-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header {
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header,
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-panel-view .panel > .panel-header {
 	background-image: url('arrow-collapse-dark-alt2.svg');
 }
 
@@ -78,7 +81,8 @@ body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-panel-view .panel > 
 	background-image: url('arrow-expand-dark-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header.expanded {
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-panel-view .panel > .panel-header.expanded,
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-panel-view .panel > .panel-header.expanded {
 	background-image: url('arrow-expand-dark-alt2.svg');
 }
 

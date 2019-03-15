@@ -15,6 +15,10 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar > .co
 	-webkit-mask-image: url('icon-dark-alt2.svg');
 }
 
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .activitybar > .content .monaco-action-bar .action-label.scm {
+	-webkit-mask-image: url('icon-dark-alt3.svg');
+}
+
 .monaco-workbench .viewlet.scm-viewlet .collapsible.header .actions {
 	width: initial;
 	flex: 1;

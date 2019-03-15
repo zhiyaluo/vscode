@@ -38,7 +38,8 @@ body[data-icon-theme="icon-explorations-1"] .monaco-tl-twistie.collapsible {
 	background-image: url("expanded-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible {
+body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible,
+body[data-icon-theme="icon-explorations-3"] .monaco-tl-twistie.collapsible {
 	background-image: url("expanded-alt2.svg");
 }
 
@@ -52,7 +53,8 @@ body[data-icon-theme="icon-explorations-1"] .monaco-tl-twistie.collapsible.colla
 	background-image: url("collapsed-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+body[data-icon-theme="icon-explorations-2"] .monaco-tl-twistie.collapsible.collapsed:not(.loading),
+body[data-icon-theme="icon-explorations-3"] .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
 	display: inline-block;
 	background-image: url("collapsed-alt2.svg");
 }
@@ -65,7 +67,8 @@ body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsib
 	background-image: url("expanded-dark-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading),
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
 	background-image: url("expanded-dark-alt2.svg");
 }
 
@@ -73,7 +76,8 @@ body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsib
 	background-image: url("expanded-dark-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible:not(.loading),
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-tl-twistie.collapsible:not(.loading) {
 	background-image: url("expanded-dark-alt2.svg");
 }
 
@@ -85,7 +89,8 @@ body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tl-twistie.collapsib
 	background-image: url("collapsed-dark-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading),
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-tl-twistie.collapsible.collapsed:not(.loading) {
 	background-image: url("collapsed-dark-alt2.svg");
 }
 

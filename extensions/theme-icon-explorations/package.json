@@ -19,6 +19,11 @@
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
 			},
 			{
+				"id": "icon-explorations-3",
+				"label": "Icon Explorations 3",
+				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
+			},
+			{
 				"id": "icon-explorations-original",
 				"label": "Icon Explorations (Original)",
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"

@@ -14,3 +14,7 @@ body[data-icon-theme="icon-explorations-1"] .update-activity {
 body[data-icon-theme="icon-explorations-2"] .update-activity {
 	-webkit-mask: url('update-alt2.svg') no-repeat 50% 50%;
 }
+
+body[data-icon-theme="icon-explorations-3"] .update-activity {
+	-webkit-mask: url('update-alt3.svg') no-repeat 50% 50%;
+}

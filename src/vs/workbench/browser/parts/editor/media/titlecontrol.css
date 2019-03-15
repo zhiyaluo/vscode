@@ -64,7 +64,8 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .co
 	background: url('close-alt1.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
+body[data-icon-theme="icon-explorations-3"] .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
 	background: url('close-alt2.svg') center center no-repeat;
 }
 
@@ -79,7 +80,9 @@ body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .part.edi
 }
 
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
+body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action,
+body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .part.editor > .content .editor-group-container > .title .close-editor-action {
 	background: url('close-inverse-alt2.svg') center center no-repeat;
 }
 
