@@ -32,7 +32,7 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 
 body[data-icon-theme="icon-explorations-3"].vs-dark .monaco-workbench .explorer-viewlet .action-close-all-files,
 body[data-icon-theme="icon-explorations-3"].hc-black .monaco-workbench .explorer-viewlet .action-close-all-files {
-	background: url("closeall_inverse-alt2.svg") center center no-repeat;
+	background: url("closeall_inverse-alt3.svg") center center no-repeat;
 }
 
 .monaco-workbench .explorer-action.new-file {

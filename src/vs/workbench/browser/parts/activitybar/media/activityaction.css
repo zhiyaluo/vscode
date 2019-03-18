@@ -6,7 +6,7 @@
 .monaco-workbench .activitybar > .content .monaco-action-bar .action-item {
 	display: block;
 	position: relative;
-	padding: 5px 0;
+	padding: 4px 0;
 }
 
 .monaco-workbench .activitybar > .content .monaco-action-bar .action-label {
@@ -15,9 +15,13 @@
 	height: 40px;
 	line-height: 40px;
 	margin-right: 0;
-	padding: 0 0 0 50px;
+	padding: 0 0 0 40px;
 	box-sizing: border-box;
 	font-size: 15px;
+}
+
+.monaco-workbench .activitybar > .content .monaco-action-bar .action-label[class*="extensionViewlet"]{
+	-webkit-mask-size: 24px !important;
 }
 
 .monaco-workbench .activitybar > .content .monaco-action-bar .action-item:focus:before {
@@ -67,7 +71,7 @@
 
 .monaco-workbench .activitybar.right > .content .monaco-action-bar .action-label {
 	margin-left: 0;
-	padding: 0 50px 0 0;
+	padding: 0 40px 0 0;
 	background-position: calc(100% - 9px) center;
 }
 
