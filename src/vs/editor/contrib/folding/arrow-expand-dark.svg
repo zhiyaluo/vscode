@@ -1,3 +1,4 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.5 5.21975L13.0302 5.75L8.26548 10.5155H7.73448L2.96973 5.75L3.49998 5.21975L7.99998 9.71975L12.5 5.21975Z" fill="#C5C5C5"/>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;">
+<path style="fill:#5A5A5A" d="M11,4v7H4V4H11 M12,3H3v9h9V3L12,3z"/>
+<line style="fill:none;stroke:#C5C5C5;stroke-miterlimit:10" x1="10" y1="7.5" x2="5" y2="7.5"/>
 </svg>
