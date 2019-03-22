@@ -1,3 +1,3 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
-]><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><polygon fill="#C5C5C5" points="12,3 8,3 8,4 11,4 11,7 14,7 14,14 6,14 6,8 5,8 5,15 15,15 15,6"/><path fill="#89D185" d="M7 3.018h-2v-2.018h-1.981v2.018h-2.019v1.982h2.019v2h1.981v-2h2v-1.982z"/></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.375 12.375H14.125V13.25H12.375V15H11.5V13.25H9.75V12.375H11.5V10.625H12.375V12.375ZM3.625 1.875V12.375H8.875V13.25H2.75V1H8.62207L12.375 4.75293V9.75H11.5V5.375H8V1.875H3.625ZM8.875 2.49707V4.5H10.8779L8.875 2.49707Z" fill="#C5C5C5"/>
+</svg>

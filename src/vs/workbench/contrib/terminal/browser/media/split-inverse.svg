@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -1 16 16" enable-background="new 0 -1 16 16"><path fill="#C5C5C5" d="M1 1v12h14v-12h-14zm1 3h4.999v8h-4.999v-8zm12 8h-5.001v-8h5.001v8z"/></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="2" width="16" height="1" fill="#C4C4C4"/>
+<rect y="5" width="16" height="1" fill="#C4C4C4"/>
+<rect y="14" width="16" height="1" fill="#C4C4C4"/>
+<rect x="7.5" y="14.5" width="9" height="1" transform="rotate(-90 7.5 14.5)" fill="#C4C4C4"/>
+<rect y="3" width="1" height="12" fill="#C4C4C4"/>
+<rect x="15" y="3" width="1" height="12" fill="#C4C4C4"/>
+</svg>
