@@ -337,6 +337,18 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-ac
 	background: url('add-inverse.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .debug-viewlet .debug-action.add-watch-expression,
+body[data-icon-theme="icon-explorations-1"].vs-dark .debug-viewlet .debug-action.add-function-breakpoint,
+body[data-icon-theme="icon-explorations-1"].hc-black .debug-viewlet .debug-action.add-watch-expression {
+	background: url('add-inverse-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .debug-viewlet .debug-action.add-watch-expression,
+body[data-icon-theme="icon-explorations-2"].vs-dark .debug-viewlet .debug-action.add-function-breakpoint,
+body[data-icon-theme="icon-explorations-2"].hc-black .debug-viewlet .debug-action.add-watch-expression {
+	background: url('add-inverse-alt2.svg') center center no-repeat;
+}
+
 .vs-dark .debug-viewlet .monaco-list-row .expression .value.changed {
 	animation-name: debugViewletValueChanged;
 }
