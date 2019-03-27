@@ -12,12 +12,12 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .activitybar .mona
 	-webkit-mask: url('files-dark-alt1.svg') no-repeat 50% 50%;
 }
 
+/* body[data-icon-theme="icon-explorations-1"] .monaco-workbench .activitybar .monaco-action-bar .action-item.checked .action-label.explore {
+	-webkit-mask: url('files-dark-alt2.svg') no-repeat 50% 50%;
+} */
+
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar .monaco-action-bar .action-label.explore {
 	-webkit-mask: url('files-dark-alt2.svg') no-repeat 50% 50%;
-}
-
-body[data-icon-theme="icon-explorations-3"] .monaco-workbench .activitybar .monaco-action-bar .action-label.explore {
-	-webkit-mask: url('files-dark-alt3.svg') no-repeat 50% 50%;
 }
 
 /* --- Explorer viewlet --- */

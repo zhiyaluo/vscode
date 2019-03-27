@@ -16,10 +16,6 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .activitybar .mona
 	-webkit-mask: url('debug-dark-alt2.svg') no-repeat 50% 50%;
 }
 
-body[data-icon-theme="icon-explorations-3"] .monaco-workbench .activitybar .monaco-action-bar .action-label.debug {
-	-webkit-mask: url('debug-dark-alt3.svg') no-repeat 50% 50%;
-}
-
 .monaco-editor .debug-top-stack-frame-column::before {
 	background: url('current-arrow.svg') center center no-repeat;
 }

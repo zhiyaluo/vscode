@@ -96,3 +96,41 @@
 	align-items: center;
 	justify-content: center;
 }
+
+/* Overrides for icon explorations */
+
+/* Split */
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='workbench.action.splitEditor'],
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='workbench.action.splitEditor']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/split-editor-horizontal-inverse-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='workbench.action.splitEditor'],
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='workbench.action.splitEditor']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/split-editor-horizontal-inverse-alt2.svg');
+}
+
+/* Compare */
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-alt2.svg');
+}
+
+/* Close */
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='workbench.action.closeActiveEditor']{
+	background-image: url('../../../../workbench/browser/parts/editor/media/close-big-inverse-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='workbench.action.closeActiveEditor']{
+	background-image: url('../../../../workbench/browser/parts/editor/media/close-big-inverse-alt2.svg');
+}
+
+/* Refresh */
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt2.svg');
+}

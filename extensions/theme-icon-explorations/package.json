@@ -10,22 +10,12 @@
 		"iconThemes": [
 			{
 				"id": "icon-explorations-1",
-				"label": "Icon Explorations 1",
+				"label": "VS Code Icons: Outline",
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
 			},
 			{
 				"id": "icon-explorations-2",
-				"label": "Icon Explorations 2",
-				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
-			},
-			{
-				"id": "icon-explorations-3",
-				"label": "Icon Explorations 3",
-				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
-			},
-			{
-				"id": "icon-explorations-original",
-				"label": "Icon Explorations (Original)",
+				"label": "VS Code Icons: Solid",
 				"path": "../theme-seti/icons/vs-seti-icon-theme.json"
 			}
 		]

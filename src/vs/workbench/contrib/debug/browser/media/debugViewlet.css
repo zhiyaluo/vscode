@@ -49,6 +49,16 @@
 	background: url('configure-inverse.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.configure,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.configure {
+	background: url('configure-inverse-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.configure,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.configure {
+	background: url('configure-inverse-alt2.svg') center center no-repeat;
+}
+
 .vs-dark .monaco-workbench .debug-action.toggle-repl,
 .hc-black .monaco-workbench .debug-action.toggle-repl {
 	background: url('repl-inverse.svg') center center no-repeat;
@@ -387,6 +397,16 @@
 .vs-dark .debug-viewlet .debug-action.remove-all,
 .hc-black .debug-viewlet .debug-action.remove-all {
 	background: url('remove-all-inverse.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .debug-viewlet .debug-action.remove-all,
+body[data-icon-theme="icon-explorations-1"].hc-black .debug-viewlet .debug-action.remove-all {
+	background: url('remove-all-inverse-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .debug-viewlet .debug-action.remove-all,
+body[data-icon-theme="icon-explorations-2"].hc-black .debug-viewlet .debug-action.remove-all {
+	background: url('remove-all-inverse-alt2.svg') center center no-repeat;
 }
 
 .vs-dark .debug-viewlet .debug-action.breakpoints-activate,

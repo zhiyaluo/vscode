@@ -124,6 +124,16 @@
 	background-image: url('up-inverse.svg');
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .maximize-panel-action,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .maximize-panel-action {
+	background-image: url('up-inverse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .maximize-panel-action,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .maximize-panel-action {
+	background-image: url('up-inverse-alt2.svg');
+}
+
 .vs-dark .monaco-workbench .panel.right .maximize-panel-action,
 .hc-black .monaco-workbench .panel.right .maximize-panel-action {
 	background-image: url('left-inverse.svg');
@@ -142,6 +152,16 @@
 	background-image: url('down-inverse.svg');
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .minimize-panel-action,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .minimize-panel-action {
+	background-image: url('down-inverse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .minimize-panel-action,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .minimize-panel-action {
+	background-image: url('down-inverse-alt2.svg');
+}
+
 .vs-dark .monaco-workbench .panel.right .minimize-panel-action,
 .hc-black .monaco-workbench .panel.right .minimize-panel-action {
 	background-image: url('right-inverse.svg');
@@ -150,6 +170,16 @@
 .vs-dark .monaco-workbench .hide-panel-action,
 .hc-black .monaco-workbench .hide-panel-action {
 	background: url('close-inverse.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .hide-panel-action,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .hide-panel-action {
+	background: url('close-inverse-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .hide-panel-action,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .hide-panel-action {
+	background: url('close-inverse-alt2.svg') center center no-repeat;
 }
 
 .vs-dark .monaco-workbench .part.panel > .title > .panel-switcher-container.composite-bar > .monaco-action-bar .action-label.toggle-more,

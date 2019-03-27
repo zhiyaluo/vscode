@@ -260,6 +260,7 @@ export class ActionItem extends BaseActionItem {
 				this.label.setAttribute('role', 'menuitem');
 			} else {
 				this.label.setAttribute('role', 'button');
+				this.label.setAttribute('data-title', this._action.id);
 			}
 		}
 
