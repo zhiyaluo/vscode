@@ -342,6 +342,16 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .search-action.col
 	background: url('excludeSettings-dark.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .search-view .query-details .file-types .controls>.monaco-custom-checkbox.useExcludesAndIgnoreFiles,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .search-view .query-details .file-types .controls>.monaco-custom-checkbox.useExcludesAndIgnoreFiles {
+	background: url('excludeSettings-dark-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .search-view .query-details .file-types .controls>.monaco-custom-checkbox.useExcludesAndIgnoreFiles,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .search-view .query-details .file-types .controls>.monaco-custom-checkbox.useExcludesAndIgnoreFiles {
+	background: url('excludeSettings-dark-alt2.svg') center center no-repeat;
+}
+
 .search-view .replace.findInFileMatch {
 	text-decoration: line-through;
 }
@@ -382,6 +392,16 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .search-action.col
 .vs-dark .search-view .action-remove,
 .hc-black .search-view .action-remove {
 	background: url("action-remove-dark.svg") center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"].vs-dark .search-view .action-remove,
+body[data-icon-theme="icon-explorations-1"].hc-black .search-view .action-remove {
+	background: url("action-remove-dark-alt1.svg") center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .search-view .action-remove,
+body[data-icon-theme="icon-explorations-2"].hc-black .search-view .action-remove {
+	background: url("action-remove-dark-alt2.svg") center center no-repeat;
 }
 
 .vs-dark .search-view .message {
