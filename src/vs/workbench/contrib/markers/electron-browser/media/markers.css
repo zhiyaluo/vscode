@@ -65,6 +65,16 @@
 	background: url('excludeSettings-dark.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].vs-dark .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude,
+body[data-icon-theme="icon-explorations-1"].hc-black .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
+	background: url('excludeSettings-dark-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude,
+body[data-icon-theme="icon-explorations-2"].hc-black .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
+	background: url('excludeSettings-dark-alt2.svg') center center no-repeat;
+}
+
 .markers-panel .markers-panel-container {
 	height: 100%;
 }
