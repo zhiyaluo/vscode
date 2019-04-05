@@ -6,26 +6,88 @@
 .vs .monaco-custom-checkbox.monaco-case-sensitive {
 	background: url('case-sensitive.svg') center center no-repeat;
 }
+
+body[data-icon-theme="icon-explorations-1"].vs .monaco-custom-checkbox.monaco-case-sensitive {
+	background: url('case-sensitive-alt1.svg') center center no-repeat;
+}
+body[data-icon-theme="icon-explorations-2"].vs .monaco-custom-checkbox.monaco-case-sensitive {
+	background: url('case-sensitive-alt2.svg') center center no-repeat;
+}
+
 .hc-black .monaco-custom-checkbox.monaco-case-sensitive,
 .hc-black .monaco-custom-checkbox.monaco-case-sensitive:hover,
 .vs-dark .monaco-custom-checkbox.monaco-case-sensitive {
 	background: url('case-sensitive-dark.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-case-sensitive,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-case-sensitive:hover,
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-custom-checkbox.monaco-case-sensitive {
+	background: url('case-sensitive-dark-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-case-sensitive,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-case-sensitive:hover,
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-custom-checkbox.monaco-case-sensitive {
+	background: url('case-sensitive-dark-alt2.svg') center center no-repeat;
+}
+
 .vs .monaco-custom-checkbox.monaco-whole-word {
 	background: url('whole-word.svg') center center no-repeat;
 }
+
+body[data-icon-theme="icon-explorations-1"].vs .monaco-custom-checkbox.monaco-whole-word {
+	background: url('whole-word-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs .monaco-custom-checkbox.monaco-whole-word {
+	background: url('whole-word-alt2.svg') center center no-repeat;
+}
+
 .hc-black .monaco-custom-checkbox.monaco-whole-word,
 .hc-black .monaco-custom-checkbox.monaco-whole-word:hover,
 .vs-dark .monaco-custom-checkbox.monaco-whole-word {
 	background: url('whole-word-dark.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-whole-word,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-whole-word:hover,
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-custom-checkbox.monaco-whole-word {
+	background: url('whole-word-dark-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-whole-word,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-whole-word:hover,
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-custom-checkbox.monaco-whole-word {
+	background: url('whole-word-dark-alt2.svg') center center no-repeat;
+}
+
 .vs .monaco-custom-checkbox.monaco-regex {
 	background: url('regex.svg') center center no-repeat;
 }
+
+body[data-icon-theme="icon-explorations-1"].vs .monaco-custom-checkbox.monaco-regex {
+	background: url('regex-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].vs .monaco-custom-checkbox.monaco-regex {
+	background: url('regex-alt2.svg') center center no-repeat;
+}
+
 .hc-black .monaco-custom-checkbox.monaco-regex,
 .hc-black .monaco-custom-checkbox.monaco-regex:hover,
 .vs-dark .monaco-custom-checkbox.monaco-regex {
 	background: url('regex-dark.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-regex,
+body[data-icon-theme="icon-explorations-1"].hc-black .monaco-custom-checkbox.monaco-regex:hover,
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-custom-checkbox.monaco-regex {
+	background: url('regex-dark-alt1.svg') center center no-repeat;
+}
+
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-regex,
+body[data-icon-theme="icon-explorations-2"].hc-black .monaco-custom-checkbox.monaco-regex:hover,
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-custom-checkbox.monaco-regex {
+	background: url('regex-dark-alt2.svg') center center no-repeat;
 }
