@@ -99,6 +99,11 @@
 
 /* Overrides for icon explorations */
 
+:root{
+	--iconDark: #C5C5C5;
+	--iconLight: #424242;
+}
+
 /****************
 	ACTION BAR
 ****************/
@@ -136,28 +141,80 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .co
 ****************/
 
 /* Refresh */
-body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt1.svg');
 }
-body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt2.svg');
 }
 
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt2.svg');
+}
+
 /* Stage */
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.stageAll'],
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.stage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/stage-inverse-alt1.svg');
+}
+
 body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.stageAll'],
 body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.stage']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/stage-alt1.svg');
 }
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.stageAll'],
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.stage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/stage-inverse-alt2.svg');
+}
+
 body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.stageAll'],
 body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.stage']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/stage-alt2.svg');
 }
 
+/* Unstage */
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.unstageAll'],
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.unstage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/unstage-inverse-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.unstageAll'],
+body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.unstage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/unstage-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.unstageAll'],
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.unstage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/unstage-inverse-alt2.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.unstageAll'],
+body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.unstage']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/unstage-alt2.svg');
+}
+
 /* Discard */
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.cleanAll'],
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.clean']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/clean-inverse-alt1.svg');
+}
+
 body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.cleanAll'],
 body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.clean']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/clean-alt1.svg');
 }
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.cleanAll'],
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.clean']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/clean-inverse-alt2.svg');
+}
+
 body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource-group > .actions .action-label[data-title='git.cleanAll'],
 body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.clean']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/clean-alt2.svg');
@@ -172,9 +229,90 @@ body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .res
 }
 
 /* Commit */
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt1.svg');
+}
+
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt1.svg');
 }
+
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt2.svg');
+}
+
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt2.svg');
+}
+
+/****************
+	SCM PEEK VIEW ICONS
+****************/
+
+/* Next */
+body[data-icon-theme^="icon-explorations-"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label.octicon::before {
+	display: none;
+}
+
+body[data-icon-theme^="icon-explorations-"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label,
+body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label{
+	background: none;
+}
+
+body[data-icon-theme^="icon-explorations-"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label{
+	background-color: var(--iconLight);
+}
+
+body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label{
+	background-color: var(--iconDark);
+}
+
+/* Stage */
+
+body[data-icon-theme="icon-explorations-1"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='git.stageChange']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/stage-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='git.stageChange']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/stage-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
+/* Unstage */
+
+body[data-icon-theme="icon-explorations-1"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='git.revertChange']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/unstage-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='git.revertChange']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/unstage-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
+/* Previous */
+
+body[data-icon-theme="icon-explorations-1"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='editor.action.dirtydiff.previous']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/previous-inverse-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='editor.action.dirtydiff.previous']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/previous-inverse-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
+/* Next */
+
+body[data-icon-theme="icon-explorations-1"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='editor.action.dirtydiff.next']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/next-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='editor.action.dirtydiff.next']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/next-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
+/* Close */
+
+body[data-icon-theme="icon-explorations-1"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='peekview.close']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/close-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label[data-title='peekview.close']{
+	-webkit-mask: url('../../../../workbench/contrib/files/electron-browser/media/close-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
