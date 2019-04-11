@@ -120,12 +120,10 @@
 	background: url('CollapseAll_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-tree-action.collapse-all,
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-tree-action.collapse-all {
-	background: url('CollapseAll_inverse-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-tree-action.collapse-all {
+	-webkit-mask: url('CollapseAll-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-tree-action.collapse-all,
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-tree-action.collapse-all {
-	background: url('CollapseAll_inverse-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-tree-action.collapse-all {
+	-webkit-mask: url('CollapseAll-alt2.svg') no-repeat 50% 50%/16px 16px;
 }

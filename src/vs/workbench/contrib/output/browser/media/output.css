@@ -12,6 +12,14 @@
 	background: url('clear_output_inverse.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .output-action.clear-output {
+	-webkit-mask: url('clear-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .output-action.clear-output {
+	-webkit-mask: url('clear-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
 .monaco-workbench .output-action.output-scroll-lock {
 	background: url('output_lock.svg') center center no-repeat;
 }
@@ -21,15 +29,15 @@
 	background: url('output_lock_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .output-action.output-scroll-lock,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .output-action.output-scroll-lock {
-	background: url('output_lock_inverse-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .output-action.output-scroll-lock {
+	-webkit-mask: url('output-lock-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .output-action.output-scroll-lock,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .output-action.output-scroll-lock {
-	background: url('output_lock_inverse-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .output-action.output-scroll-lock {
+	-webkit-mask: url('output-lock-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
+
+
 
 .monaco-workbench .output-action.output-scroll-unlock {
 	background: url('output_unlock.svg') center center no-repeat;
@@ -40,15 +48,14 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .output-a
 	background: url('output_unlock_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .output-action.output-scroll-unlock,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .output-action.output-scroll-unlock {
-	background: url('output_unlock_inverse-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .output-action.output-scroll-unlock {
+	-webkit-mask: url('output-unlock-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .output-action.output-scroll-unlock,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .output-action.output-scroll-unlock {
-	background: url('output_unlock_inverse-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .output-action.output-scroll-unlock {
+	-webkit-mask: url('output-unlock-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
+
 
 .monaco-workbench .output-action.open-log-file {
 	background: url('open_log_file.svg') center center no-repeat;

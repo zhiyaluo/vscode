@@ -3,6 +3,14 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+body[data-icon-theme^="icon-explorations-"] .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
+	background: var(--iconLight);
+}
+
+body[data-icon-theme^="icon-explorations-"].vs-dark .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
+	background: var(--iconDark);
+}
+
 .monaco-action-bar .action-item.markers-panel-action-filter-container {
 	cursor: default;
 	margin-right: 10px;
@@ -36,7 +44,7 @@
 	border: 1px solid #ddd;
 }
 
-.markers-panel-action-filter > .markers-panel-filter-controls {
+.markers-panel-action-filter>.markers-panel-filter-controls {
 	position: absolute;
 	top: 0px;
 	bottom: 0;
@@ -45,34 +53,32 @@
 	align-items: center;
 }
 
-.markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-badge {
+.markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-badge {
 	margin: 4px 0px;
 	padding: 0px 8px;
 	border-radius: 2px;
 }
 
-.markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-badge.hidden,
-.markers-panel-action-filter-container.small .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-badge {
+.markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-badge.hidden,
+.markers-panel-action-filter-container.small .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-badge {
 	display: none;
 }
 
-.vs .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
+.vs .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
 	background: url('excludeSettings.svg') center center no-repeat;
 }
 
-.vs-dark .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude,
-.hc-black .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
+.vs-dark .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude,
+.hc-black .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
 	background: url('excludeSettings-dark.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude,
-body[data-icon-theme="icon-explorations-1"].hc-black .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
-	background: url('excludeSettings-dark-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
+	-webkit-mask: url('excludeSettings-dark-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude,
-body[data-icon-theme="icon-explorations-2"].hc-black .markers-panel-action-filter > .markers-panel-filter-controls > .markers-panel-filter-filesExclude {
-	background: url('excludeSettings-dark-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
+	-webkit-mask: url('excludeSettings-dark-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
 
 .markers-panel .markers-panel-container {
@@ -91,7 +97,7 @@ body[data-icon-theme="icon-explorations-2"].hc-black .markers-panel-action-filte
 	text-decoration: underline;
 }
 
-.markers-panel  .markers-panel-container .hidden {
+.markers-panel .markers-panel-container .hidden {
 	display: none;
 }
 
@@ -211,9 +217,9 @@ body[data-icon-theme="icon-explorations-2"].hc-black .markers-panel-action-filte
 	display: none;
 }
 
-.markers-panel .monaco-list-row:hover .monaco-tl-contents > .marker-icon.quickFix,
-.markers-panel .monaco-list-row.selected .monaco-tl-contents > .marker-icon.quickFix,
-.markers-panel .monaco-list-row.focused .monaco-tl-contents > .marker-icon.quickFix {
+.markers-panel .monaco-list-row:hover .monaco-tl-contents>.marker-icon.quickFix,
+.markers-panel .monaco-list-row.selected .monaco-tl-contents>.marker-icon.quickFix,
+.markers-panel .monaco-list-row.focused .monaco-tl-contents>.marker-icon.quickFix {
 	display: none;
 }
 

@@ -3,6 +3,14 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+body[data-icon-theme^="icon-explorations-"] .monaco-workbench .part.panel>.title>.title-actions .monaco-action-bar .action-item .action-label {
+	background: var(--iconLight);
+}
+
+body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-workbench .part.panel>.title>.title-actions .monaco-action-bar .action-item .action-label {
+	background: var(--iconDark);
+}
+
 .monaco-workbench.nopanel .part.panel {
 	display: none !important;
 	visibility: hidden !important;
@@ -30,13 +38,13 @@
 	border-left-style: solid;
 }
 
-.monaco-workbench .part.panel > .title > .title-actions .monaco-action-bar .action-item .action-label {
+.monaco-workbench .part.panel>.title>.title-actions .monaco-action-bar .action-item .action-label {
 	outline-offset: -2px;
 }
 
 /** Panel Switcher */
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container.composite-bar > .monaco-action-bar .action-label.toggle-more {
+.monaco-workbench .part.panel>.title>.panel-switcher-container.composite-bar>.monaco-action-bar .action-label.toggle-more {
 	background-image: url('ellipsis.svg');
 	display: block;
 	height: 28px;
@@ -48,43 +56,45 @@
 	background-position: center center;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar {
-	line-height: 27px; /* matches panel titles in settings */
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar {
+	line-height: 27px;
+	/* matches panel titles in settings */
 	height: 35px;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .action-item:first-child {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .action-item:first-child {
 	padding-left: 12px;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .action-item {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .action-item {
 	text-transform: uppercase;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 11px;
-	padding-bottom: 3px; /* puts the bottom border down */
+	padding-bottom: 3px;
+	/* puts the bottom border down */
 	padding-top: 4px;
 	display: flex;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .action-item .action-label{
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .action-item .action-label {
 	margin-right: 0;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .action-item:last-child {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .action-item:last-child {
 	padding-right: 10px;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .action-item.checked .action-label {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .action-item.checked .action-label {
 	border-bottom: 1px solid;
 	margin-right: 0;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .badge {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .badge {
 	margin-left: 8px;
 }
 
-.monaco-workbench .part.panel > .title > .panel-switcher-container > .monaco-action-bar .badge .badge-content {
+.monaco-workbench .part.panel>.title>.panel-switcher-container>.monaco-action-bar .badge .badge-content {
 	padding: 0.3em 0.5em;
 	border-radius: 1em;
 	font-weight: normal;
@@ -93,7 +103,7 @@
 	min-width: 1.6em;
 	line-height: 1em;
 	box-sizing: border-box;
-	}
+}
 
 /** Actions */
 
@@ -124,14 +134,12 @@
 	background-image: url('up-inverse.svg');
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .maximize-panel-action,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .maximize-panel-action {
-	background-image: url('up-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .maximize-panel-action {
+	-webkit-mask: url('up-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .maximize-panel-action,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .maximize-panel-action {
-	background-image: url('up-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .maximize-panel-action {
+	-webkit-mask: url('up-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
 
 .vs-dark .monaco-workbench .panel.right .maximize-panel-action,
@@ -152,14 +160,12 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .maximize
 	background-image: url('down-inverse.svg');
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .minimize-panel-action,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .minimize-panel-action {
-	background-image: url('down-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .minimize-panel-action {
+	-webkit-mask: url('down-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .minimize-panel-action,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .minimize-panel-action {
-	background-image: url('down-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .minimize-panel-action {
+	-webkit-mask: url('down-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
 
 .vs-dark .monaco-workbench .panel.right .minimize-panel-action,
@@ -172,17 +178,15 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .minimize
 	background: url('close-inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .hide-panel-action,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .hide-panel-action {
-	background: url('close-inverse-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .hide-panel-action {
+	-webkit-mask: url('close-alt1.svg') no-repeat 50% 50%/16px 16px;
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .hide-panel-action,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .hide-panel-action {
-	background: url('close-inverse-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .hide-panel-action {
+	-webkit-mask: url('close-alt2.svg') no-repeat 50% 50%/16px 16px;
 }
 
-.vs-dark .monaco-workbench .part.panel > .title > .panel-switcher-container.composite-bar > .monaco-action-bar .action-label.toggle-more,
-.hc-black .monaco-workbench .part.panel > .title > .panel-switcher-container.composite-bar > .monaco-action-bar .action-label.toggle-more {
+.vs-dark .monaco-workbench .part.panel>.title>.panel-switcher-container.composite-bar>.monaco-action-bar .action-label.toggle-more,
+.hc-black .monaco-workbench .part.panel>.title>.panel-switcher-container.composite-bar>.monaco-action-bar .action-label.toggle-more {
 	background-image: url('ellipsis-inverse.svg');
 }
