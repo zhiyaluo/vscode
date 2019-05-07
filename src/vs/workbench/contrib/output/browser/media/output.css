@@ -61,6 +61,14 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .output-action.out
 	background: url('open_log_file.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .output-action.open-log-file {
+	-webkit-mask: url('output-log-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .output-action.open-log-file {
+	-webkit-mask: url('output-log-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
 .vs-dark .monaco-workbench .output-action.open-log-file,
 .hc-black .monaco-workbench .output-action.open-log-file {
 	background: url('open_log_file_inverse.svg') center center no-repeat;

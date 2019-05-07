@@ -115,6 +115,14 @@
 	background: url('clear-repl.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.clear-repl {
+	-webkit-mask: url('clear-repl-alt1.svg') no-repeat 50% 50%/16px 16px;
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.clear-repl {
+	-webkit-mask: url('clear-repl-alt2.svg') no-repeat 50% 50%/16px 16px;
+}
+
 .vs-dark .debug-action.clear-repl,
 .hc-black .debug-action.clear-repl {
 	background: url('clear-repl-inverse.svg') center center no-repeat;
