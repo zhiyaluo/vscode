@@ -11,10 +11,20 @@
 
 .monaco-workbench .symbol-icon.block {
 	display: inline-block;
-	height: 14px;
+	height: 16px;
 	width: 16px;
-	min-height: 14px;
+	min-height: 16px;
 	min-width: 16px;
+}
+
+.monaco-workbench .symbol-icon.block::before {
+	position: relative;
+	top: -4px;
+	left: 18px;
+}
+
+.monaco-quick-open-widget .quick-open-tree .quick-open-entry .quick-open-entry-icon::before{
+	left: 20px;
 }
 
 /* default icons */
@@ -27,6 +37,28 @@
 	background-image: url('Field_16x_darkp.svg');
 }
 
+body[data-icon-theme^="icon-explorations-"] .monaco-workbench .symbol-icon {
+	position: relative;
+	background-image: none !important;
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon::before {
+	content: "";
+	position: absolute;
+	margin-left: -20px;
+	width: 16px;
+	height: 22px;
+	-webkit-mask-image: url("../../suggest/media/field-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon::before {
+	content: "";
+	position: absolute;
+	margin-left: -20px;
+	width: 16px;
+	height: 22px;
+	-webkit-mask-image: url("../../suggest/media/field-alt2.svg");
+}
+
 /* constant */
 .monaco-workbench .symbol-icon.constant {
 	background-image: url('Constant_16x.svg');
@@ -34,6 +66,12 @@
 .vs-dark .monaco-workbench .symbol-icon.constant,
 .hc-black .monaco-workbench .symbol-icon.constant {
 	background-image: url('Constant_16x_inverse.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.constant::before {
+	-webkit-mask-image: url("../../suggest/media/constant-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.constant::before {
+	-webkit-mask-image: url("../../suggest/media/constant-alt2.svg");
 }
 
 /* enum */
@@ -44,6 +82,14 @@
 .hc-black .monaco-workbench .symbol-icon.enum {
 	background-image: url('Enumerator_inverse_16x.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.enum::before {
+	-webkit-mask-image: url("../../suggest/media/enumerator-alt1.svg");
+	background-color: var(--orange);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.enum::before {
+	-webkit-mask-image: url("../../suggest/media/enumerator-alt2.svg");
+	background-color: var(--orange);
+}
 
 /* enum-member */
 .monaco-workbench .symbol-icon.enum-member {
@@ -52,6 +98,14 @@
 .vs-dark .monaco-workbench .symbol-icon.enum-member,
 .hc-black .monaco-workbench .symbol-icon.enum-member {
 	background-image: url('EnumItem_inverse_16x.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.enum-member::before {
+	-webkit-mask-image: url("../../suggest/media/enum-member-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.enum-member::before {
+	-webkit-mask-image: url("../../suggest/media/enum-member-alt2.svg");
+	background-color: var(--blue);
 }
 
 /* struct */
@@ -62,6 +116,14 @@
 .hc-black .monaco-workbench .symbol-icon.struct {
 	background-image: url('Structure_16x_vscode_inverse.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.struct::before {
+	-webkit-mask-image: url("../../suggest/media/structure-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.struct::before {
+	-webkit-mask-image: url("../../suggest/media/structure-alt2.svg");
+	background-color: var(--blue);
+}
 
 /* event */
 .monaco-workbench .symbol-icon.event {
@@ -70,6 +132,14 @@
 .vs-dark .monaco-workbench .symbol-icon.event,
 .hc-black .monaco-workbench .symbol-icon.event {
 	background-image: url('Event_16x_vscode_inverse.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.event::before {
+	-webkit-mask-image: url("../../suggest/media/event-alt1.svg");
+	background-color: var(--orange);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.event::before {
+	-webkit-mask-image: url("../../suggest/media/event-alt2.svg");
+	background-color: var(--orange);
 }
 
 /* operator */
@@ -80,6 +150,14 @@
 .hc-black .monaco-workbench .symbol-icon.operator {
 	background-image: url('Operator_16x_vscode_inverse.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.operator::before {
+	-webkit-mask-image: url("../../suggest/media/operator-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.operator::before {
+	-webkit-mask-image: url("../../suggest/media/operator-alt2.svg");
+	background-color: var(--blue);
+}
 
 /* type paramter */
 .monaco-workbench .symbol-icon.type-parameter {
@@ -89,6 +167,12 @@
 .hc-black .monaco-workbench .symbol-icon.type-parameter {
 	background-image: url('Template_16x_vscode_inverse.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.type-parameter::before {
+	-webkit-mask-image: url("../../suggest/media/parameter-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.type-parameter::before {
+	-webkit-mask-image: url("../../suggest/media/parameter-alt2.svg");
+}
 
 /* boolean, null */
 .monaco-workbench .symbol-icon.boolean {
@@ -97,6 +181,14 @@
 .vs-dark .monaco-workbench .symbol-icon.boolean,
 .hc-black .monaco-workbench .symbol-icon.boolean {
 	background-image: url('BooleanData_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.boolean::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.null::before {
+	-webkit-mask-image: url("../../suggest/media/boolean-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.boolean::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.null::before {
+	-webkit-mask-image: url("../../suggest/media/boolean-alt2.svg");
 }
 
 /* null */
@@ -116,6 +208,14 @@
 .hc-black .monaco-workbench .symbol-icon.class {
 	background-image: url('Class_16x_darkp.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.class::before {
+	-webkit-mask-image: url("../../suggest/media/class-alt1.svg");
+	background-color: var(--orange);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.class::before {
+	-webkit-mask-image: url("../../suggest/media/class-alt2.svg");
+	background-color: var(--orange);
+}
 
 /* constructor */
 .monaco-workbench .symbol-icon.constructor {
@@ -124,6 +224,18 @@
 .vs-dark .monaco-workbench .symbol-icon.constructor,
 .hc-black .monaco-workbench .symbol-icon.constructor {
 	background-image: url('Method_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.constructor::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.method::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.function::before {
+	-webkit-mask-image: url("../../suggest/media/method-alt1.svg");
+	background-color: var(--purple);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.constructor::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.method::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.function::before {
+	-webkit-mask-image: url("../../suggest/media/method-alt2.svg");
+	background-color: var(--purple);
 }
 
 /* file */
@@ -134,6 +246,12 @@
 .hc-black .monaco-workbench .symbol-icon.file {
 	background-image: url('Document_16x_darkp.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.file::before {
+	-webkit-mask-image: url("../../suggest/media/file-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.file::before {
+	-webkit-mask-image: url("../../suggest/media/file-alt2.svg");
+}
 
 /* field */
 .monaco-workbench .symbol-icon.field {
@@ -142,6 +260,14 @@
 .vs-dark .monaco-workbench .symbol-icon.field,
 .hc-black .monaco-workbench .symbol-icon.field {
 	background-image: url('Field_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.field::before {
+	-webkit-mask-image: url("../../suggest/media/field-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.field::before {
+	-webkit-mask-image: url("../../suggest/media/field-alt2.svg");
+	background-color: var(--blue);
 }
 
 /* variable */
@@ -152,6 +278,14 @@
 .hc-black .monaco-workbench .symbol-icon.variable {
 	background-image: url('LocalVariable_16x_vscode_inverse.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.variable::before {
+	-webkit-mask-image: url("../../suggest/media/variable-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.variable::before {
+	-webkit-mask-image: url("../../suggest/media/variable-alt2.svg");
+	background-color: var(--blue);
+}
 
 /* array */
 .monaco-workbench .symbol-icon.array {
@@ -160,6 +294,12 @@
 .vs-dark .monaco-workbench .symbol-icon.array,
 .hc-black .monaco-workbench .symbol-icon.array {
 	background-image: url('Indexer_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.array::before {
+	-webkit-mask-image: url("../../suggest/media/array-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.array::before {
+	-webkit-mask-image: url("../../suggest/media/array-alt2.svg");
 }
 
 /* keyword */
@@ -171,6 +311,12 @@
 .hc-black .monaco-workbench .symbol-icon.keyword {
 	background-image: url('IntelliSenseKeyword_16x_darkp.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.keyword::before {
+	-webkit-mask-image: url("../../suggest/media/keyword-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.keyword::before {
+	-webkit-mask-image: url("../../suggest/media/keyword-alt2.svg2.svg");
+}
 
 /* interface */
 .monaco-workbench .symbol-icon.interface {
@@ -179,6 +325,14 @@
 .vs-dark .monaco-workbench .symbol-icon.interface,
 .hc-black .monaco-workbench .symbol-icon.interface {
 	background-image: url('Interface_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.interface::before {
+	-webkit-mask-image: url("../../suggest/media/interface-alt1.svg");
+	background-color: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.interface::before {
+	-webkit-mask-image: url("../../suggest/media/interface-alt2.svg");
+	background-color: var(--blue);
 }
 
 /* method */
@@ -206,6 +360,18 @@
 .vs-dark .monaco-workbench .symbol-icon.object,
 .hc-black .monaco-workbench .symbol-icon.object {
 	background-image: url('Namespace_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.object::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.namespace::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.package::before,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.module::before {
+	-webkit-mask-image: url("../../suggest/media/namespace-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.object::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.namespace::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.package::before,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.module::before {
+	-webkit-mask-image: url("../../suggest/media/namespace-alt2.svg");
 }
 
 /* namespace */
@@ -243,6 +409,12 @@
 .hc-black .monaco-workbench .symbol-icon.number {
 	background-image: url('Numeric_16x_darkp.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.number::before {
+	-webkit-mask-image: url("../../suggest/media/number-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.number::before {
+	-webkit-mask-image: url("../../suggest/media/number-alt2.svg");
+}
 
 /* property */
 .monaco-workbench .symbol-icon.property {
@@ -251,6 +423,12 @@
 .vs-dark .monaco-workbench .symbol-icon.property,
 .hc-black .monaco-workbench .symbol-icon.property {
 	background-image: url('Property_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.property::before {
+	-webkit-mask-image: url("../../suggest/media/property-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.property::before {
+	-webkit-mask-image: url("../../suggest/media/property-alt2.svg");
 }
 
 /* snippet */
@@ -271,6 +449,12 @@
 .hc-black .monaco-workbench .symbol-icon.string {
 	background-image: url('String_16x_darkp.svg');
 }
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.string::before {
+	-webkit-mask-image: url("../../suggest/media/key-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.string::before {
+	-webkit-mask-image: url("../../suggest/media/key-alt2.svg");
+}
 
 /* key */
 .monaco-workbench .symbol-icon.key {
@@ -279,4 +463,10 @@
 .vs-dark .monaco-workbench .symbol-icon.key,
 .hc-black .monaco-workbench .symbol-icon.key {
 	background-image: url('String_16x_darkp.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.key::before {
+	-webkit-mask-image: url("../../suggest/media/key-alt1.svg");
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.key::before {
+	-webkit-mask-image: url("../../suggest/media/key-alt2.svg");
 }

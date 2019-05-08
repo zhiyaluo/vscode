@@ -18,10 +18,14 @@
 }
 
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon::before,
+body[data-icon-theme^="icon-explorations-"] .monaco-workbench .symbol-icon::before,
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .suggest-widget .details > .monaco-scrollable-element > .body > .header > .close,
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row > .contents > .main > .readMore {
 	background-image: none !important;
 	background-color: var(--gray);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: left center;
+	-webkit-mask-size: 16px;
 }
 
 /* Suggest widget*/
@@ -134,21 +138,21 @@ body[data-icon-theme^="icon-explorations-"] .monaco-editor .suggest-widget .mona
 	margin-right: 5px;
 }
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .details > .monaco-scrollable-element > .body > .header > .close {
-	-webkit-mask: url("close-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("close-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .details > .monaco-scrollable-element > .body > .header > .close {
-	-webkit-mask: url("close-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("close-alt2.svg");
 }
 
 .monaco-editor .suggest-widget .monaco-list .monaco-list-row > .contents > .main > .readMore {
 	background-image: url("./info.svg");
 }
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row > .contents > .main > .readMore {
-	-webkit-mask: url("info-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("info-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row > .contents > .main > .readMore {
-	-webkit-mask: url("info-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("info-alt2.svg");
 	background-color: var(--blue);
 }
 
@@ -294,183 +298,183 @@ body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .mona
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.method::before,
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.function::before,
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.constructor::before {
-	-webkit-mask: url("method-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("method-alt1.svg");
 	background-color: var(--purple);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.method::before,
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.function::before,
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.constructor::before {
-	-webkit-mask: url("method-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("method-alt2.svg");
 	background-color: var(--purple);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.field::before {
-	-webkit-mask: url("field-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("field-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.field::before {
-	-webkit-mask: url("field-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("field-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.event::before {
-	-webkit-mask: url("event-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("event-alt1.svg");
 	background-color: var(--orange);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.event::before {
-	-webkit-mask: url("event-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("event-alt2.svg");
 	background-color: var(--orange);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.operator::before {
-	-webkit-mask: url("operator-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("operator-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.operator::before {
-	-webkit-mask: url("operator-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("operator-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.variable::before {
-	-webkit-mask: url("variable-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("variable-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.variable::before {
-	-webkit-mask: url("variable-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("variable-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.class::before {
-	-webkit-mask: url("class-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("class-alt1.svg");
 	background-color: var(--orange);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.class::before {
-	-webkit-mask: url("class-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("class-alt2.svg");
 	background-color: var(--orange);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.interface::before {
-	-webkit-mask: url("interface-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("interface-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.interface::before {
-	-webkit-mask: url("interface-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("interface-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.struct::before {
-	-webkit-mask: url("structure-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("structure-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.struct::before {
-	-webkit-mask: url("structure-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("structure-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.type-parameter::before {
-	-webkit-mask: url("parameter-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("parameter-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.type-parameter::before {
-	-webkit-mask: url("parameter-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("parameter-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.module::before {
-	-webkit-mask: url("namespace-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("namespace-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.module::before {
-	-webkit-mask: url("namespace-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("namespace-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.property::before {
-	-webkit-mask: url("property-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("property-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.property::before {
-	-webkit-mask: url("property-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("property-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.unit::before {
-	-webkit-mask: url("ruler-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("ruler-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.unit::before {
-	-webkit-mask: url("ruler-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("ruler-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.constant::before {
-	-webkit-mask: url("constant-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("constant-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.constant::before {
-	-webkit-mask: url("constant-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("constant-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.value::before,
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.enum::before {
-	-webkit-mask: url("enumerator-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("enumerator-alt1.svg");
 	background-color: var(--orange);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.value::before,
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.enum::before {
-	-webkit-mask: url("enumerator-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("enumerator-alt2.svg");
 	background-color: var(--orange);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.enum-member::before {
-	-webkit-mask: url("enum-member-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("enum-member-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.enum-member::before {
-	-webkit-mask: url("enum-member-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("enum-member-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.keyword::before {
-	-webkit-mask: url("keyword-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("keyword-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.keyword::before {
-	-webkit-mask: url("keyword-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("keyword-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.text::before {
-	-webkit-mask: url("string-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("string-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.text::before {
-	-webkit-mask: url("string-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("string-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.color::before {
-	-webkit-mask: url("color-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("color-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.color::before {
-	-webkit-mask: url("color-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("color-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.file::before {
-	-webkit-mask: url("file-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("file-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.file::before {
-	-webkit-mask: url("file-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("file-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.reference::before {
-	-webkit-mask: url("reference-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("reference-alt1.svg");
 	background-color: var(--blue);
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.reference::before {
-	-webkit-mask: url("reference-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("reference-alt2.svg");
 	background-color: var(--blue);
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.snippet::before {
-	-webkit-mask: url("snippet-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("snippet-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.snippet::before {
-	-webkit-mask: url("snippet-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("snippet-alt2.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.folder::before {
-	-webkit-mask: url("folder-alt1.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("folder-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon.folder::before {
-	-webkit-mask: url("folder-alt2.svg") no-repeat 50% 50%/16px 16px;
+	-webkit-mask-image: url("folder-alt2.svg");
 }
 
 .monaco-editor .suggest-widget .monaco-list .monaco-list-row .icon.customcolor .colorspan {
