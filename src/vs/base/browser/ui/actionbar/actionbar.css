@@ -131,10 +131,18 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .co
 /* Compare */
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-alt1.svg');
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-light-alt1.svg');
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-light-alt2.svg');
+}
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
+body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions .action-label[data-title='git.openChange'],
+body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part.editor > .content .editor-group-container > .title .editor-actions .action-label[data-title='git.openChange']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/open-change-alt2.svg');
 }
 
@@ -231,11 +239,17 @@ body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .res
 }
 
 /* Open File */
+body[data-icon-theme="icon-explorations-1"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.openFile2']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/gotofile-inverse-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"].vs-dark .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.openFile2']{
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/gotofile-inverse-alt2.svg');
+}
 body[data-icon-theme="icon-explorations-1"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.openFile2']{
 	background-image: url('../../../../workbench/contrib/files/electron-browser/media/gotofile-alt1.svg');
 }
 body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .resource > .name > .monaco-icon-label > .actions .action-label[data-title='git.openFile2']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/gotofile.svg');
+	background-image: url('../../../../workbench/contrib/files/electron-browser/media/gotofile-alt2.svg');
 }
 
 /* Commit */

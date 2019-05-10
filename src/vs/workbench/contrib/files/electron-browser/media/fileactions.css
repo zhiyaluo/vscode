@@ -3,7 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body[data-icon-theme^="icon-explorations-"] .monaco-panel-view .panel > .panel-header > .actions .action-label.icon {
+/* body[data-icon-theme^="icon-explorations-"] .monaco-workbench .part > .title > .title-actions .action-label { */
+body[data-icon-theme^="icon-explorations-"] .composite:not('.debug-viewlet') .monaco-panel-view .panel > .panel-header > .actions .action-label.icon {
 	-webkit-mask-image: none;
 }
 
@@ -18,6 +19,21 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .composite
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.new-folder {
 	-webkit-mask-image: url('AddFolder-alt2.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.collapse-explorer {
+	-webkit-mask-image: url('CollapseAll-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.collapse-explorer {
+	-webkit-mask-image: url('CollapseAll-alt2.svg');
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.refresh-explorer {
+	-webkit-mask-image: url('Refresh-alt1.svg');
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.refresh-explorer {
+	-webkit-mask-image: url('Refresh-alt2.svg');
 }
 
 .monaco-workbench .explorer-viewlet .action-close-all-files {
@@ -132,11 +148,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.refresh-explorer {
-	-webkit-mask-image: url('Refresh-alt1.svg');
+	background: url('Refresh-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.refresh-explorer {
-	-webkit-mask-image: url('Refresh-alt2.svg');
+	background: url('Refresh-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .explorer-action.refresh-explorer,
@@ -159,11 +175,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.collapse-explorer {
-	-webkit-mask-image: url('CollapseAll-alt1.svg');g
+	background: url('CollapseAll-alt1.svg');g
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.collapse-explorer {
-	-webkit-mask-image: url('CollapseAll-alt2.svg');
+	background: url('CollapseAll-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .explorer-action.collapse-explorer,
