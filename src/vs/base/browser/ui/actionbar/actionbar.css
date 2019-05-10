@@ -152,19 +152,19 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part.editor > .co
 
 /* Refresh */
 body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt1.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt1.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt2.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh_inverse-alt2.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.refresh']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt2.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/Refresh-alt2.svg');
 }
 
 /* Stage */
@@ -240,19 +240,19 @@ body[data-icon-theme="icon-explorations-2"] .scm-viewlet .monaco-list-row > .res
 
 /* Commit */
 body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt1.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt1.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt2.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/check-inverse-alt2.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label[data-title='git.commit']{
-	background-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt2.svg');
+	-webkit-mask-image: url('../../../../workbench/contrib/files/electron-browser/media/check-alt2.svg');
 }
 
 /****************

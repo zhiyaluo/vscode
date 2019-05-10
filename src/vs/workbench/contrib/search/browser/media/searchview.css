@@ -338,11 +338,11 @@ body[data-icon-theme="icon-explorations-2"].vs-dark .search-view .action-replace
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .search-action.refresh {
-	background: url('Refresh-alt1.svg') center center no-repeat;
+	-webkit-mask-image: url('Refresh-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .search-action.refresh {
-	background: url('Refresh-alt2.svg') center center no-repeat;
+	-webkit-mask-image: url('Refresh-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .search-action.refresh,
@@ -365,11 +365,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .search-a
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .search-action.collapse {
-	background: url('CollapseAll-alt1.svg') center center no-repeat;
+	-webkit-mask-image: url('CollapseAll-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .search-action.collapse {
-	background: url('CollapseAll-alt2.svg') center center no-repeat;
+	-webkit-mask-image: url('CollapseAll-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .search-action.collapse,
@@ -392,11 +392,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .search-a
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .search-action.clear-search-results {
-	background: url('clear-search-results-alt1.svg') center center no-repeat;
+	-webkit-mask-image: url('clear-search-results-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .search-action.clear-search-results {
-	background: url('clear-search-results-alt2.svg') center center no-repeat;
+	-webkit-mask-image: url('clear-search-results-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .search-action.clear-search-results,

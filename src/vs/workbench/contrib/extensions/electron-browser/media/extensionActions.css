@@ -18,6 +18,13 @@
 	background: url('clear-inverse.svg') center center no-repeat;
 }
 
+body[data-icon-theme="icon-explorations-1"] .monaco-action-bar .action-item .action-label.clear-extensions {
+	-webkit-mask-image: url('../../../../contrib/search/browser/media/clear-search-results-dark-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-action-bar .action-item .action-label.clear-extensions {
+	-webkit-mask-image: url('../../../../contrib/search/browser/media/clear-search-results-dark-alt2.svg');
+}
+
 .monaco-action-bar .action-item .action-label.extension-action.multiserver.install:after,
 .monaco-action-bar .action-item .action-label.extension-action.multiserver.update:after,
 .monaco-action-bar .action-item .action-label.extension-action.extension-editor-dropdown-action.dropdown:after {

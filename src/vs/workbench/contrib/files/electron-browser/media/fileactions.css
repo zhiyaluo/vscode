@@ -3,6 +3,23 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+body[data-icon-theme^="icon-explorations-"] .monaco-panel-view .panel > .panel-header > .actions .action-label.icon {
+	-webkit-mask-image: none;
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.new-file {
+	-webkit-mask-image: url('AddFile-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.new-file {
+	-webkit-mask-image: url('AddFile-alt2.svg');
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.new-folder {
+	-webkit-mask-image: url('AddFolder-alt1.svg');
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .composite.title > .title-actions .explorer-action.new-folder {
+	-webkit-mask-image: url('AddFolder-alt2.svg');
+}
+
 .monaco-workbench .explorer-viewlet .action-close-all-files {
 	background: url("closeall.svg") center center no-repeat;
 }
@@ -115,11 +132,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.refresh-explorer {
-	background: url('Refresh-alt1.svg') center center no-repeat;
+	-webkit-mask-image: url('Refresh-alt1.svg');
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.refresh-explorer {
-	background: url('Refresh-alt2.svg') center center no-repeat;
+	-webkit-mask-image: url('Refresh-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .explorer-action.refresh-explorer,
@@ -142,11 +159,11 @@ body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.collapse-explorer {
-	background: url('CollapseAll-alt1.svg') center center no-repeat;
+	-webkit-mask-image: url('CollapseAll-alt1.svg');g
 }
 
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.collapse-explorer {
-	background: url('CollapseAll-alt2.svg') center center no-repeat;
+	-webkit-mask-image: url('CollapseAll-alt2.svg');
 }
 
 .vs-dark .monaco-workbench .explorer-action.collapse-explorer,
