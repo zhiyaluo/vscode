@@ -25,15 +25,23 @@
 	cursor: -webkit-grab;
 	height: 32px;
 	width: 16px;
-	background: url('drag.svg') center center no-repeat;
+	background: url("drag.svg") center center no-repeat;
 	background-size: 16px 16px;
+}
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-toolbar .drag-area {
+	-webkit-mask-image: url("drag-alt1.svg");
+	background: var(--grayLight);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-toolbar .drag-area {
+	-webkit-mask-image: url("drag-alt2.svg");
+	background: var(--grayLight);
 }
 
 .monaco-workbench .debug-toolbar .drag-area.dragged {
 	cursor: -webkit-grabbing;
 }
 
-.monaco-workbench  .debug-toolbar .monaco-action-bar .action-item > .action-label {
+.monaco-workbench .debug-toolbar .monaco-action-bar .action-item > .action-label {
 	width: 32px;
 	height: 32px;
 	margin-right: 0;
@@ -46,15 +54,15 @@
 
 .monaco-workbench .debug-action.step-over,
 .monaco-workbench .debug-action.step-back {
-	background-image: url('step-over.svg');
+	background-image: url("step-over.svg");
 }
 
 .monaco-workbench .debug-action.step-into {
-	background-image: url('step-into.svg');
+	background-image: url("step-into.svg");
 }
 
 .monaco-workbench .debug-action.step-out {
-	background-image: url('step-out.svg');
+	background-image: url("step-out.svg");
 }
 
 .monaco-workbench .debug-action.step-back,
@@ -64,23 +72,23 @@
 
 .monaco-workbench .debug-action.continue,
 .monaco-workbench .debug-action.reverse-continue {
-	background-image: url('continue.svg');
+	background-image: url("continue.svg");
 }
 
 .monaco-workbench .debug-action.restart {
-	background-image: url('restart.svg');
+	background-image: url("restart.svg");
 }
 
 .monaco-workbench .debug-action.pause {
-	background-image: url('pause.svg');
+	background-image: url("pause.svg");
 }
 
 .monaco-workbench .debug-action.stop {
-	background-image: url('stop.svg');
+	background-image: url("stop.svg");
 }
 
 .monaco-workbench .debug-action.disconnect {
-	background-image: url('disconnect.svg');
+	background-image: url("disconnect.svg");
 }
 
 /* Dark and hc theme actions */
@@ -89,96 +97,124 @@
 .vs-dark .monaco-workbench .debug-action.step-back,
 .hc-black .monaco-workbench .debug-action.step-over,
 .hc-black .monaco-workbench .debug-action.step-back {
-	background-image: url('step-over-inverse.svg');
+	background-image: url("step-over-inverse.svg");
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.step-over,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.step-back {
+	-webkit-mask-image: url("step-over-alt1.svg");
+	background: var(--blue);
+}
+
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.step-over,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.step-back {
+	-webkit-mask-image: url("step-over-alt2.svg");
+	background: var(--blue);
 }
 
 .vs-dark .monaco-workbench .debug-action.step-into,
 .hc-black .monaco-workbench .debug-action.step-into {
-	background-image: url('step-into-inverse.svg');
+	background-image: url("step-into-inverse.svg");
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.step-into {
+	-webkit-mask-image: url("step-into-alt1.svg");
+	background: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.step-into {
+	-webkit-mask-image: url("step-into-alt2.svg");
+	background: var(--blue);
 }
 
 .vs-dark .monaco-workbench .debug-action.step-out,
 .hc-black .monaco-workbench .debug-action.step-out {
-	background-image: url('step-out-inverse.svg');
+	background-image: url("step-out-inverse.svg");
+}
+
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.step-out {
+	-webkit-mask-image: url("step-out-alt1.svg");
+	background: var(--blue);
+}
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.step-out {
+	-webkit-mask-image: url("step-out-alt2.svg");
+	background: var(--blue);
 }
 
 .vs-dark .monaco-workbench .debug-action.continue,
 .vs-dark .monaco-workbench .debug-action.reverse-continue,
 .hc-black .monaco-workbench .debug-action.continue,
 .hc-black .monaco-workbench .debug-action.reverse-continue {
-	background-image: url('continue-inverse.svg');
+	background-image: url("continue-inverse.svg");
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.continue,
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.reverse-continue,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.continue,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.reverse-continue {
-	background-image: url('continue-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.continue,
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.reverse-continue {
+	-webkit-mask-image: url("continue-inverse-alt1.svg");
+	background: var(--blue);
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.continue,
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.reverse-continue,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.continue,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.reverse-continue {
-	background-image: url('continue-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.continue,
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.reverse-continue {
+	-webkit-mask-image: url("continue-inverse-alt2.svg");
+	background: var(--blue);
 }
 
 .vs-dark .monaco-workbench .debug-action.restart,
 .hc-black .monaco-workbench .debug-action.restart {
-	background-image: url('restart-inverse.svg');
+	background-image: url("restart-inverse.svg");
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.restart,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.restart {
-	background-image: url('restart-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.restart {
+	-webkit-mask-image: url("restart-inverse-alt1.svg");
+	background: var(--green);
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.restart,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.restart {
-	background-image: url('restart-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.restart {
+	-webkit-mask-image: url("restart-inverse-alt2.svg");
+	background: var(--green);
 }
 
 .vs-dark .monaco-workbench .debug-action.pause,
 .hc-black .monaco-workbench .debug-action.pause {
-	background-image: url('pause-inverse.svg');
+	background-image: url("pause-inverse.svg");
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.pause,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.pause {
-	background-image: url('pause-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.pause {
+	-webkit-mask-image: url("pause-inverse-alt1.svg");
+	background: var(--green);
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.pause,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.pause {
-	background-image: url('pause-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.pause {
+	-webkit-mask-image: url("pause-inverse-alt2.svg");
+	background: var(--green);
 }
 
 .vs-dark .monaco-workbench .debug-action.stop,
 .hc-black .monaco-workbench .debug-action.stop {
-	background-image: url('stop-inverse.svg');
+	background-image: url("stop-inverse.svg");
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.stop,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.stop {
-	background-image: url('stop-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.stop {
+	-webkit-mask-image: url("stop-inverse-alt1.svg");
+	background: var(--red);
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.stop,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.stop {
-	background-image: url('stop-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.stop {
+	-webkit-mask-image: url("stop-inverse-alt2.svg");
+	background: var(--red);
 }
 
 .vs-dark .monaco-workbench .debug-action.disconnect,
 .hc-black .monaco-workbench .debug-action.disconnect {
-	background-image: url('disconnect-inverse.svg');
+	background-image: url("disconnect-inverse.svg");
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .debug-action.disconnect,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .debug-action.disconnect {
-	background-image: url('disconnect-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .debug-action.disconnect {
+	-webkit-mask-image: url("disconnect-inverse-alt1.svg");
+	background: var(--red);
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .debug-action.disconnect,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .debug-action.disconnect {
-	background-image: url('disconnect-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .debug-action.disconnect {
+	-webkit-mask-image: url("disconnect-inverse-alt2.svg");
+	background: var(--red);
 }
