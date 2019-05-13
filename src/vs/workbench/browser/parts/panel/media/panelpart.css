@@ -4,11 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 body[data-icon-theme^="icon-explorations-"] .monaco-workbench .part.panel>.title>.title-actions .monaco-action-bar .action-item .action-label {
-	background: var(--iconLight);
-}
-
-body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-workbench .part.panel>.title>.title-actions .monaco-action-bar .action-item .action-label {
-	background: var(--iconDark);
+	background: var(--gray);
 }
 
 .monaco-workbench.nopanel .part.panel {

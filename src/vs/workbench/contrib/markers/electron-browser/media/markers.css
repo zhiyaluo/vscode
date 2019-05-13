@@ -4,11 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 body[data-icon-theme^="icon-explorations-"] .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
-	background: var(--iconLight);
-}
-
-body[data-icon-theme^="icon-explorations-"].vs-dark .markers-panel-action-filter>.markers-panel-filter-controls>.markers-panel-filter-filesExclude {
-	background: var(--iconDark);
+	background: var(--gray);
 }
 
 .monaco-action-bar .action-item.markers-panel-action-filter-container {

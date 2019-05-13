@@ -3,19 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-:root {
-	--gray: #424242;
-	--purple: #652d90;
-	--blue: #00539c;
-	--orange: #c27d1a;
-}
 
-:root .vs-dark {
-	--gray: #c5c5c5;
-	--purple: #b180d7;
-	--blue: #75beff;
-	--orange: #e8ab53;
-}
 
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .suggest-widget .monaco-list .monaco-list-row .suggest-icon::before,
 body[data-icon-theme^="icon-explorations-"] .monaco-workbench .symbol-icon::before,

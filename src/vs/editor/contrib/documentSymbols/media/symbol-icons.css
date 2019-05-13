@@ -315,7 +315,7 @@ body[data-icon-theme="icon-explorations-1"] .monaco-workbench .symbol-icon.keywo
 	-webkit-mask-image: url("../../suggest/media/keyword-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .symbol-icon.keyword::before {
-	-webkit-mask-image: url("../../suggest/media/keyword-alt2.svg2.svg");
+	-webkit-mask-image: url("../../suggest/media/keyword-alt2.svg");
 }
 
 /* interface */

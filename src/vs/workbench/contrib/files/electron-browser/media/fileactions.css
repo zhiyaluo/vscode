@@ -53,14 +53,12 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-viewlet 
 	background: url("closeall_inverse.svg") center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-viewlet .action-close-all-files,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-viewlet .action-close-all-files {
-	background: url("closeall_inverse-alt1.svg") center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-viewlet .action-close-all-files {
+	-webkit-mask-image: url("closeall_inverse-alt1.svg");
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-viewlet .action-close-all-files,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-viewlet .action-close-all-files {
-	background: url("closeall_inverse-alt2.svg") center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-viewlet .action-close-all-files {
+	-webkit-mask-image: url("closeall_inverse-alt2.svg");
 }
 
 .monaco-workbench .explorer-action.new-file {
@@ -92,28 +90,24 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.s
 	background: url('saveall_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-action.save-all,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-action.save-all {
-	background: url('saveall_inverse-alt1.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.save-all {
+	-webkit-mask-image: url('saveall_inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.save-all,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.save-all {
-	background: url('saveall_inverse-alt2.svg') center center no-repeat;
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.save-all {
+	-webkit-mask-image: url('saveall_inverse-alt2.svg');
 }
 .vs-dark .monaco-workbench .explorer-action.new-file,
 .hc-black .monaco-workbench .explorer-action.new-file {
 	background: url('AddFile_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-action.new-file,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-action.new-file {
-	background-image: url('AddFile_inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.new-file {
+	-webkit-mask-image: url('AddFile_inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.new-file,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.new-file {
-	background-image: url('AddFile_inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.new-file {
+	-webkit-mask-image: url('AddFile_inverse-alt2.svg');
 }
 
 .monaco-workbench .explorer-action.new-folder {
@@ -133,14 +127,12 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.n
 	background: url('AddFolder_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-action.new-folder,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-action.new-folder {
-	background-image: url('AddFolder_inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.new-folder {
+	-webkit-mask-image: url('AddFolder_inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.new-folder,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.new-folder {
-	background-image: url('AddFolder_inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.new-folder {
+	-webkit-mask-image: url('AddFolder_inverse-alt2.svg');
 }
 
 .monaco-workbench .explorer-action.refresh-explorer {
@@ -160,14 +152,12 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.r
 	background: url('Refresh_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-action.refresh-explorer,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-action.refresh-explorer {
-	background-image: url('Refresh_inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.refresh-explorer {
+	-webkit-mask-image: url('Refresh_inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.refresh-explorer,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.refresh-explorer {
-	background-image: url('Refresh_inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.refresh-explorer {
+	-webkit-mask-image: url('Refresh_inverse-alt2.svg');
 }
 
 .monaco-workbench .explorer-action.collapse-explorer {
@@ -187,14 +177,12 @@ body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.c
 	background: url('CollapseAll_inverse.svg') center center no-repeat;
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .explorer-action.collapse-explorer,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .explorer-action.collapse-explorer {
-	background-image: url('CollapseAll_inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .explorer-action.collapse-explorer {
+	-webkit-mask-image: url('CollapseAll_inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .explorer-action.collapse-explorer,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .explorer-action.collapse-explorer {
-	background-image: url('CollapseAll_inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .explorer-action.collapse-explorer {
+	-webkit-mask-image: url('CollapseAll_inverse-alt2.svg');
 }
 
 .monaco-workbench .quick-open-sidebyside-vertical {

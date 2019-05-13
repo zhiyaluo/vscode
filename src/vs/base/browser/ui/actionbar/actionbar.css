@@ -99,9 +99,30 @@
 
 /* Overrides for icon explorations */
 
-:root{
-	--iconDark: #C5C5C5;
-	--iconLight: #424242;
+:root .vs-dark {
+	--blue: #75beff;
+	--gray: #c5c5c5;
+	--grayLight: #848484;
+	--green: #89d185;
+	--greenLight: #9CCE9C;
+	--orange: #e8ab53;
+	--purple: #b180d7;
+	--red: #f48771;
+	--redLight: #e51400;
+	--yellow: #fc0;
+}
+
+:root {
+	--blue: #00539c;
+	--gray: #424242;
+	--grayLight: #848484;
+	--green: #388a34;
+	--greenLight: #9CCE9C;
+	--orange: #c27d1a;
+	--purple: #652d90;
+	--red: #a31515;
+	--redLight: #e51400;
+	--yellow: #fc0;
 }
 
 /****************
@@ -284,11 +305,11 @@ body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-editor .peekview-wid
 }
 
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label{
-	background-color: var(--iconLight);
+	background-color: var(--gray);
 }
 
 body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-editor .peekview-widget .head .peekview-actions > .monaco-action-bar .action-label{
-	background-color: var(--iconDark);
+	background-color: var(--gray);
 }
 
 /* Stage */

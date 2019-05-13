@@ -20,12 +20,10 @@ body[data-icon-theme="icon-explorations-2"].vs .monaco-workbench .flip-editor-la
 	background-image: url('editor-layout-inverse.svg');
 }
 
-body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-workbench .flip-editor-layout,
-body[data-icon-theme="icon-explorations-1"].hc-black .monaco-workbench .flip-editor-layout {
-	background-image: url('editor-layout-inverse-alt1.svg');
+body[data-icon-theme="icon-explorations-1"] .monaco-workbench .flip-editor-layout {
+	-webkit-mask-image: url('editor-layout-inverse-alt1.svg');
 }
 
-body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-workbench .flip-editor-layout,
-body[data-icon-theme="icon-explorations-2"].hc-black .monaco-workbench .flip-editor-layout {
-	background-image: url('editor-layout-inverse-alt2.svg');
+body[data-icon-theme="icon-explorations-2"] .monaco-workbench .flip-editor-layout {
+	-webkit-mask-image: url('editor-layout-inverse-alt2.svg');
 }

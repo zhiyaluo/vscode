@@ -9,31 +9,30 @@
 }
 
 .vs .monaco-toolbar .action-label.toolbar-toggle-more {
-	background-image: url('ellipsis.svg');
+	background-image: url("ellipsis.svg");
 }
 
 .hc-black .monaco-toolbar .action-label.toolbar-toggle-more,
 .vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
-	background-image: url('ellipsis-inverse.svg');
+	background-image: url("ellipsis-inverse.svg");
 }
 
 body[data-icon-theme="icon-explorations-1"] .monaco-toolbar .action-label.toolbar-toggle-more {
-	background: url('ellipsis-alt1.svg');
+	-webkit-mask-image: url("ellipsis-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-toolbar .action-label.toolbar-toggle-more {
-	background: url('ellipsis-alt2.svg');
+	-webkit-mask-image: url("ellipsis-alt2.svg");
 }
 body[data-icon-theme="icon-explorations-1"].vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
-	background: url('ellipsis-inverse-alt1.svg');
+	background: url("ellipsis-inverse-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"].vs-dark .monaco-toolbar .action-label.toolbar-toggle-more {
-	background: url('ellipsis-inverse-alt2.svg');
+	background: url("ellipsis-inverse-alt2.svg");
 }
-
 
 body[data-icon-theme="icon-explorations-1"] .monaco-workbench .part > .title > .title-actions .action-label.toolbar-toggle-more.icon {
-	-webkit-mask-image: url('ellipsis-inverse-alt1.svg');
+	-webkit-mask-image: url("ellipsis-inverse-alt1.svg");
 }
 body[data-icon-theme="icon-explorations-2"] .monaco-workbench .part > .title > .title-actions .action-label.toolbar-toggle-more.icon {
-	-webkit-mask-image: url('ellipsis-inverse-alt2.svg');
+	-webkit-mask-image: url("ellipsis-inverse-alt2.svg");
 }

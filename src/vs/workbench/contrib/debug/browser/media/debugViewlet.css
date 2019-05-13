@@ -3,26 +3,6 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-:root .vs{
-	--green: #388a34;
-	--greenLight: #9CCE9C;
-	--grayLight: #848484;
-	--blue: #00539c;
-	--red: #a31515;
-	--redLight: #e51400;
-	--yellow: #fc0;
-}
-
-:root .vs-dark {
-	--green: #89d185;
-	--greenLight: #9CCE9C;
-	--grayLight: #848484;
-	--blue: #75beff;
-	--red: #f48771;
-	--redLight: #e51400;
-	--yellow: #fc0;
-}
-
 body[data-icon-theme^="icon-explorations-"] .monaco-workbench .debug-action,
 body[data-icon-theme^="icon-explorations-"] .monaco-workbench .part > .title > .title-actions .icon,
 body[data-icon-theme^="icon-explorations-"] .monaco-workbench .debug-toolbar .drag-area,
@@ -35,26 +15,14 @@ body[data-icon-theme^="icon-explorations-"] .debug-breakpoint-log,
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-breakpoint-column.debug-breakpoint-log-column::before,
 body[data-icon-theme^="icon-explorations-"] .breakpoint .icon,
 body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-focused-stack-frame,
-body[data-icon-theme^="icon-explorations-"] .debug-breakpoint-log-disabled {
+body[data-icon-theme^="icon-explorations-"] .debug-breakpoint-log-disabled,
+body[data-icon-theme^="icon-explorations-"] .debug-viewlet .debug-action,
+body[data-icon-theme^="icon-explorations-"] .monaco-panel-view .panel > .panel-header > .actions .action-label.icon {
 	background: var(--gray);
 	background-image: none !important;
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center center;
 	-webkit-mask-size: 16px;
-}
-
-body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-workbench .debug-action,
-body[data-icon-theme^="icon-explorations-"].vs-dark .monaco-workbench .part > .title > .title-actions .icon,
-body[data-icon-theme^="icon-explorations-"] .monaco-workbench .debug-toolbar .drag-area,
-body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-top-stack-frame,
-body[data-icon-theme^="icon-explorations-"] .debug-breakpoint,
-body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-breakpoint-column::before,
-body[data-icon-theme^="icon-explorations-"] .debug-breakpoint-conditional,
-body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-breakpoint-column.debug-breakpoint-conditional-column::before,
-body[data-icon-theme^="icon-explorations-"] .debug-breakpoint-log,
-body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-breakpoint-column.debug-breakpoint-log-column::before,
-body[data-icon-theme^="icon-explorations-"] .monaco-editor .debug-focused-stack-frame {
-	background: var(--iconDark);
 }
 
 /* Debug viewlet */
